@@ -1,0 +1,2461 @@
+set I := KhatimaP ThanoP BanbasaP HaldwaniP RanipokhariP SitarganjP KichhaP RudrapurP DoiwalaP SelakuiP	RoorkeeP SrinagarP KotdwarP HaridwarP PithoragarhP
+;
+set J := KhatimaDC RishikeshDC ChampawatDC HaldwaniDC DehradunDC SitarganjDC KichhaDC RudrapurDC BareillyDC SelakuiDC RoorkeeDC	SrinagarDC KotdwarDC HaridwarDC	PithoragarhDC PilibhitDC DelhiDC
+;
+set P := Tomato Capsicum BellPepper Cucumber GreenChilli
+;
+param K := 
+KhatimaP [1,2,3]
+ThanoP [1,2,3]
+BanbasaP [1,2,3]
+HaldwaniP [1,2,3]
+RanipokhariP [1,2,3]
+SitarganjP [1,2,3]
+KichhaP [1,2,3]
+RudrapurP [1,2,3]
+DoiwalaP [1,2,3]
+SelakuiP [1,2,3]
+RoorkeeP [1,2,3]
+SrinagarP [1,2,3]
+KotdwarP [1,2,3]
+HaridwarP [1,2,3]
+PithoragarhP [1,2,3]
+;
+
+set IK :=
+KhatimaP	1
+KhatimaP	2
+KhatimaP	3
+ThanoP	        1
+ThanoP	        2
+ThanoP	        3
+BanbasaP	1
+BanbasaP	2
+BanbasaP	3
+HaldwaniP	1
+HaldwaniP	2
+HaldwaniP	3
+RanipokhariP	1
+RanipokhariP	2
+RanipokhariP	3
+SitarganjP	1
+SitarganjP	2
+SitarganjP	3
+KichhaP	        1
+KichhaP	        2
+KichhaP	        3
+RudrapurP	1
+RudrapurP	2
+RudrapurP	3
+DoiwalaP	1
+DoiwalaP	2
+DoiwalaP	3
+SelakuiP	1
+SelakuiP	2
+SelakuiP	3
+RoorkeeP	1
+RoorkeeP	2
+RoorkeeP	3
+SrinagarP	1
+SrinagarP	2
+SrinagarP	3
+KotdwarP	1
+KotdwarP	2
+KotdwarP	3
+HaridwarP	1
+HaridwarP	2
+HaridwarP	3
+PithoragarhP	1
+PithoragarhP	2
+PithoragarhP	3
+
+
+;
+param C_ikj :=
+KhatimaP	1	KhatimaDC	0.375
+KhatimaP	1	RishikeshDC	7.5
+KhatimaP	1	ChampawatDC	3
+KhatimaP	1	HaldwaniDC	2
+KhatimaP	1	DehradunDC	8.25
+KhatimaP	1	SitarganjDC	0.75
+KhatimaP	1	KichhaDC	1.375
+KhatimaP	1	RudrapurDC	1.75
+KhatimaP	1	BareillyDC	2.5
+KhatimaP	1	SelakuiDC	8.75
+KhatimaP	1	RoorkeeDC	7.75
+KhatimaP	1	SrinagarDC	10.25
+KhatimaP	1	KotdwarDC 	6.375
+KhatimaP	1	HaridwarDC	7
+KhatimaP	1	PithoragarhDC	5
+KhatimaP	1	PilibhitDC	1.25
+KhatimaP	1	DelhiDC	        8.25
+ThanoP	        1	KhatimaDC	7.875
+ThanoP	        1	RishikeshDC	0.75
+ThanoP	        1	ChampawatDC	10.25
+ThanoP	        1	HaldwaniDC	6.625
+ThanoP	        1	DehradunDC	0.75
+ThanoP	        1	SitarganjDC	7.25
+ThanoP	        1	KichhaDC	6.5
+ThanoP	        1	RudrapurDC	6.25
+ThanoP	        1	BareillyDC	7.75
+ThanoP	        1	SelakuiDC	1.25
+ThanoP	        1	RoorkeeDC	1.875
+ThanoP	        1	SrinagarDC	3.75
+ThanoP	        1	KotdwarDC 	2.75
+ThanoP	        1	HaridwarDC	1.25
+ThanoP	        1	PithoragarhDC	12.25
+ThanoP	        1	PilibhitDC	8.25
+ThanoP	        1	DelhiDC	        7.125
+BanbasaP	1	KhatimaDC	0.75
+BanbasaP	1	RishikeshDC	8.25
+BanbasaP	1	ChampawatDC	2.5
+BanbasaP	1	HaldwaniDC	2.5
+BanbasaP	1	DehradunDC	8.625
+BanbasaP	1	SitarganjDC	1.125
+BanbasaP	1	KichhaDC	1.75
+BanbasaP	1	RudrapurDC	2.125
+BanbasaP	1	BareillyDC	2.5
+BanbasaP	1	SelakuiDC	9.125
+BanbasaP	1	RoorkeeDC	8.125
+BanbasaP	1	SrinagarDC	10.625
+BanbasaP	1	KotdwarDC 	6.75
+BanbasaP	1	HaridwarDC	7.375
+BanbasaP	1	PithoragarhDC	4.5
+BanbasaP	1	PilibhitDC	1.625
+BanbasaP	1	DelhiDC	        8.625
+HaldwaniP	1	KhatimaDC	2
+HaldwaniP	1	RishikeshDC	6.875
+HaldwaniP	1	ChampawatDC	4.375
+HaldwaniP	1	HaldwaniDC	0.375
+HaldwaniP	1	DehradunDC	7
+HaldwaniP	1	SitarganjDC	1.25
+HaldwaniP	1	KichhaDC	1
+HaldwaniP	1	RudrapurDC	0.875
+HaldwaniP	1	BareillyDC	2.5
+HaldwaniP	1	SelakuiDC	7.125
+HaldwaniP	1	RoorkeeDC	6.13
+HaldwaniP	1	SrinagarDC	9
+HaldwaniP	1	KotdwarDC 	5.125
+HaldwaniP	1	HaridwarDC	5.75
+HaldwaniP	1	PithoragarhDC	6.125
+HaldwaniP	1	PilibhitDC	2.375
+HaldwaniP	1	DelhiDC	        7.5
+RanipokhariP	1	KhatimaDC	8
+RanipokhariP	1	RishikeshDC	0.5
+RanipokhariP	1	ChampawatDC	10.25
+RanipokhariP	1	HaldwaniDC	6.625
+RanipokhariP	1	DehradunDC	0.75
+RanipokhariP	1	SitarganjDC	7.125
+RanipokhariP	1	KichhaDC	6.5
+RanipokhariP	1	RudrapurDC	6.25
+RanipokhariP	1	BareillyDC	7.5
+RanipokhariP	1	SelakuiDC	1.25
+RanipokhariP	1	RoorkeeDC	1.75
+RanipokhariP	1	SrinagarDC	3
+RanipokhariP	1	KotdwarDC 	2.625
+RanipokhariP	1	HaridwarDC	1
+RanipokhariP	1	PithoragarhDC	12
+RanipokhariP	1	PilibhitDC	8.125
+RanipokhariP	1	DelhiDC	        7
+SitarganjP	1	KhatimaDC	0.75
+SitarganjP	1	RishikeshDC	6.75
+SitarganjP	1	ChampawatDC	3.75
+SitarganjP	1	HaldwaniDC	1.25
+SitarganjP	1	DehradunDC	7.5
+SitarganjP	1	SitarganjDC	0.25
+SitarganjP	1	KichhaDC	0.625
+SitarganjP	1	RudrapurDC	1
+SitarganjP	1	BareillyDC	2.125
+SitarganjP	1	SelakuiDC	8
+SitarganjP	1	RoorkeeDC	7
+SitarganjP	1	SrinagarDC	9.5
+SitarganjP	1	KotdwarDC 	5.625
+SitarganjP	1	HaridwarDC	6.25
+SitarganjP	1	PithoragarhDC	5.75
+SitarganjP	1	PilibhitDC	2
+SitarganjP	1	DelhiDC	        7.625
+KichhaP	        1	KhatimaDC	1.375
+KichhaP	        1	RishikeshDC	7.375
+KichhaP	        1	ChampawatDC	4.375
+KichhaP	        1	HaldwaniDC	0.625
+KichhaP	        1	DehradunDC	6.875
+KichhaP	        1	SitarganjDC	0.625
+KichhaP	        1	KichhaDC	0.25
+KichhaP	        1 	RudrapurDC	0.375
+KichhaP	        1	BareillyDC	1.625
+KichhaP	        1	SelakuiDC	7.375
+KichhaP	        1	RoorkeeDC	6.375
+KichhaP	        1	SrinagarDC	8.875
+KichhaP	        1	KotdwarDC 	5
+KichhaP	        1 	HaridwarDC	5.625
+KichhaP	        1	PithoragarhDC	6.375
+KichhaP	        1	PilibhitDC	2.625
+KichhaP	        1	DelhiDC	        7
+RudrapurP	1	KhatimaDC	1.75
+RudrapurP	1	RishikeshDC	7
+RudrapurP	1	ChampawatDC	4.75
+RudrapurP	1	HaldwaniDC	0.8
+RudrapurP	1	DehradunDC	6.5
+RudrapurP	1	SitarganjDC	1
+RudrapurP	1	KichhaDC	0.375
+RudrapurP	1	RudrapurDC	0.25
+RudrapurP	1	BareillyDC	2
+RudrapurP	1	SelakuiDC	7
+RudrapurP	1	RoorkeeDC	6
+RudrapurP	1	SrinagarDC	8.5
+RudrapurP	1	KotdwarDC 	4.625
+RudrapurP	1	HaridwarDC	5.25
+RudrapurP	1	PithoragarhDC	6.75
+RudrapurP	1	PilibhitDC	3
+RudrapurP	1	DelhiDC	        6.625
+DoiwalaP	1	KhatimaDC	7.75
+DoiwalaP	1	RishikeshDC	0.625
+DoiwalaP	1	ChampawatDC	10.125
+DoiwalaP	1	HaldwaniDC	6.5
+DoiwalaP	1	DehradunDC	0.5
+DoiwalaP	1	SitarganjDC	7
+DoiwalaP	1	KichhaDC	6.375
+DoiwalaP	1	RudrapurDC	6.125
+DoiwalaP	1	BareillyDC	7.5
+DoiwalaP	1	SelakuiDC	1
+DoiwalaP	1	RoorkeeDC	1.625
+DoiwalaP	1	SrinagarDC	3.25
+DoiwalaP	1	KotdwarDC 	2.5
+DoiwalaP	1	HaridwarDC	0.875
+DoiwalaP	1	PithoragarhDC	11.875
+DoiwalaP	1	PilibhitDC	8
+DoiwalaP	1	DelhiDC	        6.875
+SelakuiP	1	KhatimaDC	8.75
+SelakuiP	1	RishikeshDC	1.625
+SelakuiP	1	ChampawatDC	11.125
+SelakuiP	1	HaldwaniDC	7.5
+SelakuiP	1	DehradunDC	0.5
+SelakuiP	1	SitarganjDC	8
+SelakuiP	1	KichhaDC	7.375
+SelakuiP	1	RudrapurDC	7
+SelakuiP	1	BareillyDC	8.875
+SelakuiP	1	SelakuiDC	0.25
+SelakuiP	1	RoorkeeDC	2.25
+SelakuiP	1	SrinagarDC	4.25
+SelakuiP	1	KotdwarDC 	3.5
+SelakuiP	1	HaridwarDC	1.875
+SelakuiP	1	PithoragarhDC	12.875
+SelakuiP	1	PilibhitDC	9
+SelakuiP	1	DelhiDC	        6.375
+RoorkeeP	1	KhatimaDC	7.125
+RoorkeeP	1	RishikeshDC	1.3
+RoorkeeP	1	ChampawatDC	9.5
+RoorkeeP	1	HaldwaniDC	5.875
+RoorkeeP	1	DehradunDC	1.75
+RoorkeeP	1	SitarganjDC	6.375
+RoorkeeP	1	KichhaDC	5.875
+RoorkeeP	1	RudrapurDC	5.5
+RoorkeeP	1	BareillyDC	6.375
+RoorkeeP	1	SelakuiDC	4.75
+RoorkeeP	1	RoorkeeDC	0.25
+RoorkeeP	1	SrinagarDC	4
+RoorkeeP	1	KotdwarDC 	2.5
+RoorkeeP	1	HaridwarDC	0.875
+RoorkeeP	1	PithoragarhDC	11.25
+RoorkeeP	1	PilibhitDC	7.375
+RoorkeeP	1	DelhiDC	        5.375
+SrinagarP	1	KhatimaDC	10.5
+SrinagarP	1	RishikeshDC	2.75
+SrinagarP	1	ChampawatDC	10.5
+SrinagarP	1	HaldwaniDC	8.75
+SrinagarP	1	DehradunDC	3.75
+SrinagarP	1	SitarganjDC	9.375
+SrinagarP	1	KichhaDC	8.75
+SrinagarP	1	RudrapurDC	8.5
+SrinagarP	1	BareillyDC	9.75
+SrinagarP	1	SelakuiDC	4.25
+SrinagarP	1	RoorkeeDC	4
+SrinagarP	1	SrinagarDC	0.25
+SrinagarP	1	KotdwarDC 	3.375
+SrinagarP	1	HaridwarDC	3.25
+SrinagarP	1	PithoragarhDC	7.5
+SrinagarP	1	PilibhitDC	10.375
+SrinagarP	1	DelhiDC	        8.75
+KotdwarP	1	KhatimaDC	6.25
+KotdwarP	1	RishikeshDC	2.25
+KotdwarP	1	ChampawatDC	8.75
+KotdwarP	1	HaldwaniDC	5.125
+KotdwarP	1	DehradunDC	3
+KotdwarP	1	SitarganjDC	5.625
+KotdwarP	1	KichhaDC	5
+KotdwarP	1	RudrapurDC	4.75
+KotdwarP	1	BareillyDC	6
+KotdwarP	1	SelakuiDC	3.5
+KotdwarP	1	RoorkeeDC	2.5
+KotdwarP	1	SrinagarDC	3.375
+KotdwarP	1	KotdwarDC 	0.25
+KotdwarP	1	HaridwarDC	1.75
+KotdwarP	1	PithoragarhDC	10.5
+KotdwarP	1	PilibhitDC	6.625
+KotdwarP	1	DelhiDC	        5.5
+HaridwarP	1	KhatimaDC	6.875
+HaridwarP	1	RishikeshDC	0.625
+HaridwarP	1	ChampawatDC	9.25
+HaridwarP	1	HaldwaniDC	5.625
+HaridwarP	1	DehradunDC	1.375
+HaridwarP	1	SitarganjDC	6.125
+HaridwarP	1	KichhaDC	5.5
+HaridwarP	1	RudrapurDC	5.25
+HaridwarP	1	BareillyDC	6.625
+HaridwarP	1	SelakuiDC	1.875
+HaridwarP	1	RoorkeeDC	0.875
+HaridwarP	1	SrinagarDC	3.25
+HaridwarP	1	KotdwarDC 	1.75
+HaridwarP	1	HaridwarDC	0.25
+HaridwarP	1	PithoragarhDC	11.125
+HaridwarP	1	PilibhitDC	7.25
+HaridwarP	1	DelhiDC	        6.125
+PithoragarhP	1	KhatimaDC	5
+PithoragarhP	1	RishikeshDC	11.75
+PithoragarhP	1	ChampawatDC	2.5
+PithoragarhP	1	HaldwaniDC	6.125
+PithoragarhP	1	DehradunDC	12.5
+PithoragarhP	1	SitarganjDC	5
+PithoragarhP	1	KichhaDC	5.625
+PithoragarhP	1	RudrapurDC	6
+PithoragarhP	1	BareillyDC	6.5
+PithoragarhP	1	SelakuiDC	13
+PithoragarhP	1	RoorkeeDC	12
+PithoragarhP	1	SrinagarDC	9
+PithoragarhP	1	KotdwarDC 	10.5
+PithoragarhP	1	HaridwarDC	11.25
+PithoragarhP	1	PithoragarhDC	0.375
+PithoragarhP	1	PilibhitDC	5.25
+PithoragarhP	1	DelhiDC	        12.5
+KhatimaP	2	KhatimaDC	0.1667
+KhatimaP	2	RishikeshDC	3.3333
+KhatimaP	2	ChampawatDC	1.3333
+KhatimaP	2	HaldwaniDC	0.8889
+KhatimaP	2	DehradunDC	3.6667
+KhatimaP	2	SitarganjDC	0.3333
+KhatimaP	2	KichhaDC	0.6111
+KhatimaP	2	RudrapurDC	0.7778
+KhatimaP	2	BareillyDC	1.1111
+KhatimaP	2	SelakuiDC	3.8889
+KhatimaP	2	RoorkeeDC	3.4444
+KhatimaP	2	SrinagarDC	4.5556
+KhatimaP	2	KotdwarDC 	2.8333
+KhatimaP	2	HaridwarDC	3.1111
+KhatimaP	2	PithoragarhDC	2.2222
+KhatimaP	2	PilibhitDC	0.5556
+KhatimaP	2	DelhiDC	        3.6667
+ThanoP	        2	KhatimaDC	3.5
+ThanoP	        2	RishikeshDC	0.3333
+ThanoP	        2	ChampawatDC	4.5556
+ThanoP	        2	HaldwaniDC	2.9444
+ThanoP	        2	DehradunDC	0.3333
+ThanoP	        2	SitarganjDC	3.2222
+ThanoP	        2 	KichhaDC	2.8889
+ThanoP	        2	RudrapurDC	2.7778
+ThanoP	        2	BareillyDC	3.4444
+ThanoP	        2	SelakuiDC	0.5556
+ThanoP	        2	RoorkeeDC	0.8333
+ThanoP	        2	SrinagarDC	1.6667
+ThanoP	        2	KotdwarDC 	1.2222
+ThanoP	        2	HaridwarDC	0.5556
+ThanoP	        2	PithoragarhDC	5.4444
+ThanoP	        2	PilibhitDC	3.6667
+ThanoP	        2	DelhiDC	        3.1667
+BanbasaP	2	KhatimaDC	0.3333
+BanbasaP	2	RishikeshDC	3.6667
+BanbasaP	2	ChampawatDC	1.1111
+BanbasaP	2	HaldwaniDC	1.1111
+BanbasaP	2	DehradunDC	3.8333
+BanbasaP	2	SitarganjDC	0.5
+BanbasaP	2	KichhaDC	0.7778
+BanbasaP	2	RudrapurDC	0.9444
+BanbasaP	2	BareillyDC	1.1111
+BanbasaP	2	SelakuiDC	4.0556
+BanbasaP	2	RoorkeeDC	3.6111
+BanbasaP	2	SrinagarDC	4.7222
+BanbasaP	2	KotdwarDC 	3
+BanbasaP	2	HaridwarDC	3.2778
+BanbasaP	2	PithoragarhDC	2
+BanbasaP	2	PilibhitDC	0.7222
+BanbasaP	2	DelhiDC	        3.8333
+HaldwaniP	2	KhatimaDC	0.8889
+HaldwaniP	2	RishikeshDC	2.7778
+HaldwaniP	2	ChampawatDC	1.9444
+HaldwaniP	2	HaldwaniDC	0.1667
+HaldwaniP	2	DehradunDC	3.1111
+HaldwaniP	2	SitarganjDC	0.5556
+HaldwaniP	2	KichhaDC	0.4444
+HaldwaniP	2	RudrapurDC	0.3889
+HaldwaniP	2	BareillyDC	1.1111
+HaldwaniP	2	SelakuiDC	3.3333
+HaldwaniP	2	RoorkeeDC	2.7222
+HaldwaniP	2	SrinagarDC	4
+HaldwaniP	2	KotdwarDC 	2.2778
+HaldwaniP	2	HaridwarDC	2.5556
+HaldwaniP	2	PithoragarhDC	2.7222
+HaldwaniP	2	PilibhitDC	1.0556
+HaldwaniP	2	DelhiDC	        3.3333
+RanipokhariP	2	KhatimaDC	3.5556
+RanipokhariP	2	RishikeshDC	0.2222
+RanipokhariP	2	ChampawatDC	4.5556
+RanipokhariP	2	HaldwaniDC	2.9444
+RanipokhariP	2	DehradunDC	0.3333
+RanipokhariP	2	SitarganjDC	3.1667
+RanipokhariP	2	KichhaDC	2.8889
+RanipokhariP	2	RudrapurDC	2.7778
+RanipokhariP	2	BareillyDC	3.3333
+RanipokhariP	2	SelakuiDC	0.5556
+RanipokhariP	2	RoorkeeDC	0.7778
+RanipokhariP	2	SrinagarDC	1.3333
+RanipokhariP	2	KotdwarDC 	1.1667
+RanipokhariP	2	HaridwarDC	0.4444
+RanipokhariP	2	PithoragarhDC	5.3333
+RanipokhariP	2	PilibhitDC	3.6111
+RanipokhariP	2	DelhiDC	        3.1111
+SitarganjP	2	KhatimaDC	0.3333
+SitarganjP	2	RishikeshDC	3
+SitarganjP	2	ChampawatDC	1.6667
+SitarganjP	2	HaldwaniDC	0.5556
+SitarganjP	2	DehradunDC	3.3333
+SitarganjP	2	SitarganjDC	0.1111
+SitarganjP	2	KichhaDC	0.2778
+SitarganjP	2	RudrapurDC	0.4444
+SitarganjP	2	BareillyDC	0.9444
+SitarganjP	2	SelakuiDC	3.5556
+SitarganjP	2	RoorkeeDC	3.1111
+SitarganjP	2	SrinagarDC	4.2222
+SitarganjP	2	KotdwarDC 	2.5
+SitarganjP	2	HaridwarDC	2.7778
+SitarganjP	2	PithoragarhDC	2.5556
+SitarganjP	2	PilibhitDC	0.8889
+SitarganjP	2	DelhiDC	        3.3889
+KichhaP	        2	KhatimaDC	0.6111
+KichhaP	        2	RishikeshDC	3.2778
+KichhaP	        2	ChampawatDC	1.9444
+KichhaP	        2	HaldwaniDC	0.2778
+KichhaP	        2	DehradunDC	3.0556
+KichhaP	        2	SitarganjDC	0.2778
+KichhaP	        2	KichhaDC	0.1111
+KichhaP	        2	RudrapurDC	0.1667
+KichhaP	        2	BareillyDC	0.7222
+KichhaP	        2	SelakuiDC	3.2778
+KichhaP	        2	RoorkeeDC	2.8333
+KichhaP	        2	SrinagarDC	3.9444
+KichhaP	        2	KotdwarDC 	2.2222
+KichhaP	        2	HaridwarDC	2.5
+KichhaP	        2	PithoragarhDC	2.8333
+KichhaP	        2	PilibhitDC	1.1667
+KichhaP	        2	DelhiDC	        3.1111
+RudrapurP	2	KhatimaDC	0.7778
+RudrapurP	2	RishikeshDC	3.1111
+RudrapurP	2	ChampawatDC	2.1111
+RudrapurP	2	HaldwaniDC	0.3556
+RudrapurP	2	DehradunDC	2.8889
+RudrapurP	2	SitarganjDC	0.4444
+RudrapurP	2	KichhaDC	0.1667
+RudrapurP	2	RudrapurDC	0.1111
+RudrapurP	2	BareillyDC	0.8889
+RudrapurP	2	SelakuiDC	3.1111
+RudrapurP	2	RoorkeeDC	2.6667
+RudrapurP	2	SrinagarDC	3.7778
+RudrapurP	2	KotdwarDC 	2.0556
+RudrapurP	2	HaridwarDC	2.3333
+RudrapurP	2	PithoragarhDC	3
+RudrapurP	2	PilibhitDC	1.3333
+RudrapurP	2	DelhiDC	        2.9444
+DoiwalaP	2	KhatimaDC	3.4444
+DoiwalaP	2	RishikeshDC	0.2778
+DoiwalaP	2	ChampawatDC	4.5
+DoiwalaP	2	HaldwaniDC	2.8889
+DoiwalaP	2	DehradunDC	0.2222
+DoiwalaP	2	SitarganjDC	3.1111
+DoiwalaP	2	KichhaDC	2.8333
+DoiwalaP	2	RudrapurDC	2.7222
+DoiwalaP	2	BareillyDC	3.3333
+DoiwalaP	2	SelakuiDC	0.4444
+DoiwalaP	2	RoorkeeDC	0.7222
+DoiwalaP	2	SrinagarDC	1.4444
+DoiwalaP	2	KotdwarDC 	1.1111
+DoiwalaP	2	HaridwarDC	0.3889
+DoiwalaP	2	PithoragarhDC	5.2778
+DoiwalaP	2	PilibhitDC	3.5556
+DoiwalaP	2	DelhiDC	        3.0556
+SelakuiP	2	KhatimaDC	3.8889
+SelakuiP	2	RishikeshDC	0.7222
+SelakuiP	2	ChampawatDC	4.9444
+SelakuiP	2	HaldwaniDC	3.3333
+SelakuiP	2	DehradunDC	0.2222
+SelakuiP	2	SitarganjDC	3.5556
+SelakuiP	2	KichhaDC	3.2778
+SelakuiP	2	RudrapurDC	3.1111
+SelakuiP	2	BareillyDC	3.9444
+SelakuiP	2	SelakuiDC	0.1111
+SelakuiP	2	RoorkeeDC	1
+SelakuiP	2	SrinagarDC	1.8889
+SelakuiP	2	KotdwarDC 	1.5556
+SelakuiP	2	HaridwarDC	0.8333
+SelakuiP	2	PithoragarhDC	5.7222
+SelakuiP	2	PilibhitDC	4
+SelakuiP	2	DelhiDC	        2.8333
+RoorkeeP	2	KhatimaDC	3.1667
+RoorkeeP	2	RishikeshDC	0.5778
+RoorkeeP	2	ChampawatDC	4.2222
+RoorkeeP	2	HaldwaniDC	2.6111
+RoorkeeP	2	DehradunDC	0.7778
+RoorkeeP	2	SitarganjDC	2.8333
+RoorkeeP	2	KichhaDC	2.5556
+RoorkeeP	2	RudrapurDC	2.4444
+RoorkeeP	2	BareillyDC	2.8333
+RoorkeeP	2	SelakuiDC	2.1111
+RoorkeeP	2	RoorkeeDC	0.1111
+RoorkeeP	2	SrinagarDC	1.7778
+RoorkeeP	2	KotdwarDC 	1.1111
+RoorkeeP	2	HaridwarDC	0.3889
+RoorkeeP	2	PithoragarhDC	5
+RoorkeeP	2	PilibhitDC	3.2778
+RoorkeeP	2	DelhiDC	        1.9444
+SrinagarP	2	KhatimaDC	4.6667
+SrinagarP	2	RishikeshDC	1.2222
+SrinagarP	2	ChampawatDC	4.6667
+SrinagarP	2	HaldwaniDC	3.8889
+SrinagarP	2	DehradunDC	1.6667
+SrinagarP	2	SitarganjDC	4.1667
+SrinagarP	2	KichhaDC	3.8889
+SrinagarP	2	RudrapurDC	3.7778
+SrinagarP	2	BareillyDC	4.3333
+SrinagarP	2	SelakuiDC	1.8889
+SrinagarP	2	RoorkeeDC	1.7778
+SrinagarP	2	SrinagarDC	0.1111
+SrinagarP	2	KotdwarDC 	1.5
+SrinagarP	2	HaridwarDC	1.4444
+SrinagarP	2	PithoragarhDC	3.3333
+SrinagarP	2	PilibhitDC	4.6111
+SrinagarP	2	DelhiDC	        3.8889
+KotdwarP	2	KhatimaDC	2.7778
+KotdwarP	2	RishikeshDC	1
+KotdwarP	2	ChampawatDC	3.8889
+KotdwarP	2	HaldwaniDC	2.2778
+KotdwarP	2	DehradunDC	1.3333
+KotdwarP	2	SitarganjDC	2.5
+KotdwarP	2	KichhaDC	2.2222
+KotdwarP	2	RudrapurDC	2.1111
+KotdwarP	2	BareillyDC	2.6667
+KotdwarP	2	SelakuiDC	1.5556
+KotdwarP	2	RoorkeeDC	1.1111
+KotdwarP	2	SrinagarDC	1.5
+KotdwarP	2	KotdwarDC 	0.1111
+KotdwarP	2	HaridwarDC	0.7778
+KotdwarP	2	PithoragarhDC	4.6667
+KotdwarP	2	PilibhitDC	2.9444
+KotdwarP	2	DelhiDC	        2.4444
+HaridwarP	2	KhatimaDC	3.0556
+HaridwarP	2	RishikeshDC	0.2778
+HaridwarP	2	ChampawatDC	4.1111
+HaridwarP	2	HaldwaniDC	2.5
+HaridwarP	2	DehradunDC	0.6111
+HaridwarP	2	SitarganjDC	2.7222
+HaridwarP	2	KichhaDC	2.4444
+HaridwarP	2	RudrapurDC	2.3333
+HaridwarP	2	BareillyDC	2.9444
+HaridwarP	2	SelakuiDC	0.8333
+HaridwarP	2	RoorkeeDC	0.3889
+HaridwarP	2	SrinagarDC	1.4444
+HaridwarP	2	KotdwarDC 	0.7778
+HaridwarP	2	HaridwarDC	0.1111
+HaridwarP	2	PithoragarhDC	4.9444
+HaridwarP	2	PilibhitDC	3.2222
+HaridwarP	2	DelhiDC	        2.7222
+PithoragarhP	2	KhatimaDC	2.2222
+PithoragarhP	2	RishikeshDC	5.2222
+PithoragarhP	2	ChampawatDC	1.1111
+PithoragarhP	2	HaldwaniDC	2.7222
+PithoragarhP	2	DehradunDC	5.5556
+PithoragarhP	2	SitarganjDC	2.2222
+PithoragarhP	2	KichhaDC	2.5
+PithoragarhP	2	RudrapurDC	2.6667
+PithoragarhP	2	BareillyDC	2.8889
+PithoragarhP	2	SelakuiDC	5.7778
+PithoragarhP	2	RoorkeeDC	5.3333
+PithoragarhP	2	SrinagarDC	4
+PithoragarhP	2	KotdwarDC 	4.6667
+PithoragarhP	2	HaridwarDC	5
+PithoragarhP	2	PithoragarhDC	0.1667
+PithoragarhP	2	PilibhitDC	2.3333
+PithoragarhP	2	DelhiDC	        5.5556
+KhatimaP	3	KhatimaDC	0.12
+KhatimaP	3	RishikeshDC	2.4
+KhatimaP	3	ChampawatDC	0.96
+KhatimaP	3	HaldwaniDC	0.64
+KhatimaP	3	DehradunDC	2.64
+KhatimaP	3	SitarganjDC	0.24
+KhatimaP	3	KichhaDC	0.44
+KhatimaP	3	RudrapurDC	0.56
+KhatimaP	3	BareillyDC	0.8
+KhatimaP	3	SelakuiDC	2.8
+KhatimaP	3	RoorkeeDC	2.48
+KhatimaP	3	SrinagarDC	3.28
+KhatimaP	3	KotdwarDC 	2.04
+KhatimaP	3	HaridwarDC	2.24
+KhatimaP	3	PithoragarhDC	1.6
+KhatimaP	3	PilibhitDC	0.4
+KhatimaP	3	DelhiDC	        2.64
+ThanoP	        3	KhatimaDC	2.52
+ThanoP	        3	RishikeshDC	0.24
+ThanoP	        3	ChampawatDC	3.28
+ThanoP	        3	HaldwaniDC	2.12
+ThanoP	        3	DehradunDC	0.24
+ThanoP	        3	SitarganjDC	2.32
+ThanoP	        3	KichhaDC	2.08
+ThanoP	        3	RudrapurDC	2
+ThanoP	        3	BareillyDC	2.48
+ThanoP	        3	SelakuiDC	0.4
+ThanoP	        3	RoorkeeDC	0.6
+ThanoP	        3	SrinagarDC	1.2
+ThanoP	        3	KotdwarDC 	0.88
+ThanoP	        3	HaridwarDC	0.4
+ThanoP	        3	PithoragarhDC	3.92
+ThanoP	        3	PilibhitDC	2.64
+ThanoP	        3	DelhiDC	        2.28
+BanbasaP	3	KhatimaDC	0.24
+BanbasaP	3	RishikeshDC	2.64
+BanbasaP	3	ChampawatDC	0.8
+BanbasaP	3	HaldwaniDC	0.8
+BanbasaP	3	DehradunDC	2.76
+BanbasaP	3	SitarganjDC	0.36
+BanbasaP	3	KichhaDC	0.56
+BanbasaP	3	RudrapurDC	0.68
+BanbasaP	3	BareillyDC	0.8
+BanbasaP	3	SelakuiDC	2.92
+BanbasaP	3	RoorkeeDC	2.6
+BanbasaP	3	SrinagarDC	3.4
+BanbasaP	3	KotdwarDC 	2.16
+BanbasaP	3	HaridwarDC	2.36
+BanbasaP	3	PithoragarhDC	1.44
+BanbasaP	3	PilibhitDC	0.52
+BanbasaP	3	DelhiDC	        2.76
+HaldwaniP	3	KhatimaDC	0.64
+HaldwaniP	3	RishikeshDC	2
+HaldwaniP	3	ChampawatDC	1.4
+HaldwaniP	3	HaldwaniDC	0.12
+HaldwaniP	3	DehradunDC	2.24
+HaldwaniP	3	SitarganjDC	0.4
+HaldwaniP	3	KichhaDC	0.32
+HaldwaniP	3	RudrapurDC	0.28
+HaldwaniP	3	BareillyDC	0.8
+HaldwaniP	3	SelakuiDC	2.4
+HaldwaniP	3	RoorkeeDC	1.96
+HaldwaniP	3	SrinagarDC	2.88
+HaldwaniP	3	KotdwarDC 	1.64
+HaldwaniP	3	HaridwarDC	1.84
+HaldwaniP	3	PithoragarhDC	1.96
+HaldwaniP	3	PilibhitDC	0.76
+HaldwaniP	3	DelhiDC	        2.4
+RanipokhariP	3	KhatimaDC	2.56
+RanipokhariP	3	RishikeshDC	0.16
+RanipokhariP	3	ChampawatDC	3.28
+RanipokhariP	3	HaldwaniDC	2.12
+RanipokhariP	3	DehradunDC	0.24
+RanipokhariP	3	SitarganjDC	2.28
+RanipokhariP	3	KichhaDC	2.08
+RanipokhariP	3	RudrapurDC	2
+RanipokhariP	3	BareillyDC	2.4
+RanipokhariP	3	SelakuiDC	0.4
+RanipokhariP	3	RoorkeeDC	0.56
+RanipokhariP	3	SrinagarDC	0.96
+RanipokhariP	3	KotdwarDC 	0.84
+RanipokhariP	3	HaridwarDC	0.32
+RanipokhariP	3	PithoragarhDC	3.84
+RanipokhariP	3	PilibhitDC	2.6
+RanipokhariP	3	DelhiDC	        2.24
+SitarganjP	3	KhatimaDC	0.24
+SitarganjP	3	RishikeshDC	2.16
+SitarganjP	3	ChampawatDC	1.2
+SitarganjP	3	HaldwaniDC	0.4
+SitarganjP	3	DehradunDC	2.4
+SitarganjP	3	SitarganjDC	0.08
+SitarganjP	3	KichhaDC	0.2
+SitarganjP	3	RudrapurDC	0.32
+SitarganjP	3	BareillyDC	0.68
+SitarganjP	3	SelakuiDC	2.56
+SitarganjP	3	RoorkeeDC	2.24
+SitarganjP	3	SrinagarDC	3.04
+SitarganjP	3	KotdwarDC 	1.8
+SitarganjP	3	HaridwarDC	2
+SitarganjP	3	PithoragarhDC	1.84
+SitarganjP	3	PilibhitDC	0.64
+SitarganjP	3	DelhiDC	        2.44
+KichhaP	        3	KhatimaDC	0.44
+KichhaP	        3	RishikeshDC	2.36
+KichhaP	        3	ChampawatDC	1.4
+KichhaP	        3	HaldwaniDC	0.2
+KichhaP	        3	DehradunDC	2.2
+KichhaP	        3	SitarganjDC	0.2
+KichhaP	        3	KichhaDC	0.08
+KichhaP	        3	RudrapurDC	0.12
+KichhaP	        3	BareillyDC	0.52
+KichhaP	        3	SelakuiDC	2.36
+KichhaP	        3	RoorkeeDC	2.04
+KichhaP	        3	SrinagarDC	2.84
+KichhaP	        3	KotdwarDC 	1.6
+KichhaP	        3	HaridwarDC	1.8
+KichhaP	        3	PithoragarhDC	2.04
+KichhaP	        3	PilibhitDC	0.84
+KichhaP	        3	DelhiDC	        2.24
+RudrapurP	3	KhatimaDC	0.56
+RudrapurP	3	RishikeshDC	2.24
+RudrapurP	3	ChampawatDC	1.52
+RudrapurP	3	HaldwaniDC	0.256
+RudrapurP	3	DehradunDC	2.08
+RudrapurP	3	SitarganjDC	0.32
+RudrapurP	3	KichhaDC	0.12
+RudrapurP	3	RudrapurDC	0.08
+RudrapurP	3	BareillyDC	0.64
+RudrapurP	3	SelakuiDC	2.24
+RudrapurP	3	RoorkeeDC	1.92
+RudrapurP	3	SrinagarDC	2.72
+RudrapurP	3	KotdwarDC 	1.48
+RudrapurP	3	HaridwarDC	1.68
+RudrapurP	3	PithoragarhDC	2.16
+RudrapurP	3	PilibhitDC	0.96
+RudrapurP	3	DelhiDC	        2.12
+DoiwalaP	3	KhatimaDC	2.48
+DoiwalaP	3	RishikeshDC	0.2
+DoiwalaP	3	ChampawatDC	3.24
+DoiwalaP	3	HaldwaniDC	2.08
+DoiwalaP	3	DehradunDC	0.16
+DoiwalaP	3	SitarganjDC	2.24
+DoiwalaP	3	KichhaDC	2.04
+DoiwalaP	3	RudrapurDC	1.96
+DoiwalaP	3	BareillyDC	2.4
+DoiwalaP	3	SelakuiDC	0.32
+DoiwalaP	3	RoorkeeDC	0.52
+DoiwalaP	3	SrinagarDC	1.04
+DoiwalaP	3	KotdwarDC 	0.8
+DoiwalaP	3	HaridwarDC	0.28
+DoiwalaP	3	PithoragarhDC	3.8
+DoiwalaP	3	PilibhitDC	2.56
+DoiwalaP	3	DelhiDC	        2.2
+SelakuiP	3	KhatimaDC	2.8
+SelakuiP	3	RishikeshDC	0.52
+SelakuiP	3	ChampawatDC	3.56
+SelakuiP	3	HaldwaniDC	2.4
+SelakuiP	3	DehradunDC	0.16
+SelakuiP	3	SitarganjDC	2.56
+SelakuiP	3	KichhaDC	2.36
+SelakuiP	3	RudrapurDC	2.24
+SelakuiP	3	BareillyDC	2.84
+SelakuiP	3	SelakuiDC	0.08
+SelakuiP	3	RoorkeeDC	0.72
+SelakuiP	3	SrinagarDC	1.36
+SelakuiP	3	KotdwarDC 	1.12
+SelakuiP	3	HaridwarDC	0.6
+SelakuiP	3	PithoragarhDC	4.12
+SelakuiP	3	PilibhitDC	2.88
+SelakuiP	3	DelhiDC	        2.04
+RoorkeeP	3	KhatimaDC	2.28
+RoorkeeP	3	RishikeshDC	0.416
+RoorkeeP	3	ChampawatDC	3.04
+RoorkeeP	3	HaldwaniDC	1.88
+RoorkeeP	3	DehradunDC	0.56
+RoorkeeP	3	SitarganjDC	2.04
+RoorkeeP	3	KichhaDC	1.84
+RoorkeeP	3	RudrapurDC	1.76
+RoorkeeP	3	BareillyDC	2.04
+RoorkeeP	3	SelakuiDC	1.52
+RoorkeeP	3	RoorkeeDC	0.08
+RoorkeeP	3	SrinagarDC	1.28
+RoorkeeP	3	KotdwarDC 	0.8
+RoorkeeP	3	HaridwarDC	0.28
+RoorkeeP	3	PithoragarhDC	3.6
+RoorkeeP	3	PilibhitDC	2.36
+RoorkeeP	3	DelhiDC	        1.72
+SrinagarP	3	KhatimaDC	3.36
+SrinagarP	3	RishikeshDC	0.88
+SrinagarP	3	ChampawatDC	3.36
+SrinagarP	3	HaldwaniDC	2.8
+SrinagarP	3	DehradunDC	1.2
+SrinagarP	3	SitarganjDC	3
+SrinagarP	3	KichhaDC	2.8
+SrinagarP	3	RudrapurDC	2.72
+SrinagarP	3	BareillyDC	3.12
+SrinagarP	3	SelakuiDC	1.36
+SrinagarP	3	RoorkeeDC	1.28
+SrinagarP	3	SrinagarDC	0.08
+SrinagarP	3	KotdwarDC 	1.08
+SrinagarP	3	HaridwarDC	1.04
+SrinagarP	3	PithoragarhDC	2.4
+SrinagarP	3	PilibhitDC	3.32
+SrinagarP	3	DelhiDC	        2.8
+KotdwarP	3	KhatimaDC	2
+KotdwarP	3	RishikeshDC	0.72
+KotdwarP	3	ChampawatDC	2.8
+KotdwarP	3	HaldwaniDC	1.64
+KotdwarP	3	DehradunDC	0.96
+KotdwarP	3	SitarganjDC	1.8
+KotdwarP	3	KichhaDC	1.6
+KotdwarP	3	RudrapurDC	1.52
+KotdwarP	3	BareillyDC	1.92
+KotdwarP	3	SelakuiDC	1.12
+KotdwarP	3	RoorkeeDC	0.8
+KotdwarP	3	SrinagarDC	1.08
+KotdwarP	3	KotdwarDC 	0.08
+KotdwarP	3	HaridwarDC	0.56
+KotdwarP	3	PithoragarhDC	3.36
+KotdwarP	3	PilibhitDC	2.12
+KotdwarP	3	DelhiDC	        1.76
+HaridwarP	3	KhatimaDC	2.2
+HaridwarP	3	RishikeshDC	0.2
+HaridwarP	3	ChampawatDC	2.96
+HaridwarP	3	HaldwaniDC	1.8
+HaridwarP	3	DehradunDC	0.44
+HaridwarP	3	SitarganjDC	1.96
+HaridwarP	3	KichhaDC	1.76
+HaridwarP	3	RudrapurDC	1.68
+HaridwarP	3	BareillyDC	2.12
+HaridwarP	3	SelakuiDC	0.6
+HaridwarP	3	RoorkeeDC	0.28
+HaridwarP	3	SrinagarDC	1.04
+HaridwarP	3	KotdwarDC 	0.56
+HaridwarP	3	HaridwarDC	0.08
+HaridwarP	3	PithoragarhDC	3.56
+HaridwarP	3	PilibhitDC	2.32
+HaridwarP	3	DelhiDC	        1.96
+PithoragarhP	3	KhatimaDC	1.6
+PithoragarhP	3	RishikeshDC	3.76
+PithoragarhP	3	ChampawatDC	0.8
+PithoragarhP	3	HaldwaniDC	1.96
+PithoragarhP	3	DehradunDC	4
+PithoragarhP	3	SitarganjDC	1.6
+PithoragarhP	3	KichhaDC	1.8
+PithoragarhP	3	RudrapurDC	1.92
+PithoragarhP	3	BareillyDC	2.08
+PithoragarhP	3	SelakuiDC	4.16
+PithoragarhP	3	RoorkeeDC	3.84
+PithoragarhP	3	SrinagarDC	2.88
+PithoragarhP	3	KotdwarDC 	3.36
+PithoragarhP	3	HaridwarDC	3.6
+PithoragarhP	3	PithoragarhDC	0.12
+PithoragarhP	3	PilibhitDC	1.68
+PithoragarhP	3	DelhiDC	        4
+
+;
+param F_ik :=
+KhatimaP	1	500
+KhatimaP	2	1000
+KhatimaP	3	2000
+ThanoP	        1	500
+ThanoP	        2	1000
+ThanoP	        3	2000
+BanbasaP	1	500
+BanbasaP	2	1000
+BanbasaP	3	2000
+HaldwaniP	1	500
+HaldwaniP	2	1000
+HaldwaniP	3	2000
+RanipokhariP	1	500
+RanipokhariP	2	1000
+RanipokhariP	3	2000
+SitarganjP	1	500
+SitarganjP	2	1000
+SitarganjP	3	2000
+KichhaP	        1	500
+KichhaP	        2	1000
+KichhaP	        3	2000
+RudrapurP	1	500
+RudrapurP	2	1000
+RudrapurP	3	2000
+DoiwalaP	1	500
+DoiwalaP	2	1000
+DoiwalaP	3	2000
+SelakuiP	1	500
+SelakuiP	2	1000
+SelakuiP	3	2000
+RoorkeeP	1	500
+RoorkeeP	2	1000
+RoorkeeP	3	2000
+SrinagarP	1	500
+SrinagarP	2	1000
+SrinagarP	3	2000
+KotdwarP	1	500
+KotdwarP	2	1000
+KotdwarP	3	2000
+HaridwarP	1	500
+HaridwarP	2	1000
+HaridwarP	3	2000
+PithoragarhP	1	500
+PithoragarhP	2	1000
+PithoragarhP	3	2000
+
+;
+param X_ik_min :=
+KhatimaP	1	100
+KhatimaP	2	1001
+KhatimaP	3	2001
+ThanoP	        1	100
+ThanoP	        2	1001
+ThanoP	        3	2001
+BanbasaP	1	100
+BanbasaP	2	1001
+BanbasaP	3	2001
+HaldwaniP	1	100
+HaldwaniP	2	1001
+HaldwaniP	3	2001
+RanipokhariP	1	100
+RanipokhariP	2	1001
+RanipokhariP	3	2001
+SitarganjP	1	100
+SitarganjP	2	1001
+SitarganjP	3	2001
+KichhaP	        1	100
+KichhaP	        2	1001
+KichhaP	        3	2001
+RudrapurP	1	100
+RudrapurP	2	1001
+RudrapurP	3	2001
+DoiwalaP	1	100
+DoiwalaP	2	1001
+DoiwalaP	3	2001
+SelakuiP	1	100
+SelakuiP	2	1001
+SelakuiP	3	2001
+RoorkeeP	1	100
+RoorkeeP	2	1001
+RoorkeeP	3	2001
+SrinagarP	1	100
+SrinagarP	2	1001
+SrinagarP	3	2001
+KotdwarP	1	100
+KotdwarP	2	1001
+KotdwarP	3	2001
+HaridwarP	1	100
+HaridwarP	2	1001
+HaridwarP	3	2001
+PithoragarhP	1	100
+PithoragarhP	2	1001
+PithoragarhP	3	2001
+
+
+;
+param X_ik_max :=
+KhatimaP	1	1000
+KhatimaP	2	2000
+KhatimaP	3	6000
+ThanoP	        1	1000
+ThanoP	        2	2000
+ThanoP	        3	6000
+BanbasaP	1	1000
+BanbasaP	2	2000
+BanbasaP	3	6000
+HaldwaniP	1	1000
+HaldwaniP	2	2000
+HaldwaniP	3	6000
+RanipokhariP	1	1000
+RanipokhariP	2	2000
+RanipokhariP	3	6000
+SitarganjP	1	1000
+SitarganjP	2	2000
+SitarganjP	3	6000
+KichhaP	        1	1000
+KichhaP	        2	2000
+KichhaP	        3	6000
+RudrapurP	1	1000
+RudrapurP	2	2000
+RudrapurP	3	6000
+DoiwalaP	1	1000
+DoiwalaP	2	2000
+DoiwalaP	3	6000
+SelakuiP	1	1000
+SelakuiP	2	2000
+SelakuiP	3	6000
+RoorkeeP	1	1000
+RoorkeeP	2	2000
+RoorkeeP	3	6000
+SrinagarP	1	1000
+SrinagarP	2	2000
+SrinagarP	3	6000
+KotdwarP	1	1000
+KotdwarP	2	2000
+KotdwarP	3	6000
+HaridwarP	1	1000
+HaridwarP	2	2000
+HaridwarP	3	6000
+PithoragarhP	1	1000
+PithoragarhP	2	2000
+PithoragarhP	3	6000
+
+
+;
+param D_jp :=
+KhatimaDC	Tomato	1000
+RishikeshDC	Tomato	1000
+ChampawatDC	Tomato	1000
+HaldwaniDC	Tomato	1500
+DehradunDC	Tomato	4000
+SitarganjDC	Tomato	1500
+KichhaDC	Tomato	250
+RudrapurDC	Tomato	700
+BareillyDC	Tomato	4500
+SelakuiDC	Tomato	1000
+RoorkeeDC	Tomato	1000
+SrinagarDC	Tomato	6000
+KotdwarDC 	Tomato	750
+HaridwarDC	Tomato	20000
+PithoragarhDC	Tomato	1000
+PilibhitDC	Tomato	500
+DelhiDC	        Tomato	20000
+KhatimaDC	Capsicum	100
+RishikeshDC	Capsicum	100
+ChampawatDC	Capsicum	100
+HaldwaniDC	Capsicum	150
+DehradunDC	Capsicum	400
+SitarganjDC	Capsicum	150
+KichhaDC	Capsicum	50
+RudrapurDC	Capsicum	100
+BareillyDC	Capsicum	450
+SelakuiDC	Capsicum	100
+RoorkeeDC	Capsicum	100
+SrinagarDC	Capsicum	2000
+KotdwarDC 	Capsicum	100
+HaridwarDC	Capsicum	2000
+PithoragarhDC	Capsicum	100
+PilibhitDC	Capsicum	50
+DelhiDC	        Capsicum	2000
+KhatimaDC	BellPepper	200
+RishikeshDC	BellPepper	200
+ChampawatDC	BellPepper	200
+HaldwaniDC	BellPepper	250
+DehradunDC	BellPepper	800
+SitarganjDC	BellPepper	350
+KichhaDC	BellPepper	100
+RudrapurDC	BellPepper	200
+BareillyDC	BellPepper	1000
+SelakuiDC	BellPepper	200
+RoorkeeDC	BellPepper	200
+SrinagarDC	BellPepper	400
+KotdwarDC 	BellPepper	200
+HaridwarDC	BellPepper	3000
+PithoragarhDC	BellPepper	200
+PilibhitDC	BellPepper	100
+DelhiDC	        BellPepper	4000
+KhatimaDC	Cucumber	500
+RishikeshDC	Cucumber	500
+ChampawatDC	Cucumber	500
+HaldwaniDC	Cucumber	250
+DehradunDC	Cucumber	1000
+SitarganjDC	Cucumber	500
+KichhaDC	Cucumber	200
+RudrapurDC	Cucumber	500
+BareillyDC	Cucumber	2000
+SelakuiDC	Cucumber	500
+RoorkeeDC	Cucumber	500
+SrinagarDC	Cucumber	1000
+KotdwarDC 	Cucumber	500
+HaridwarDC	Cucumber	5000
+PithoragarhDC	Cucumber	600
+PilibhitDC	Cucumber	300
+DelhiDC	        Cucumber	8000
+KhatimaDC	GreenChilli	50
+RishikeshDC	GreenChilli	50
+ChampawatDC	GreenChilli	50
+HaldwaniDC	GreenChilli	25
+DehradunDC	GreenChilli	100
+SitarganjDC	GreenChilli	50
+KichhaDC	GreenChilli	20
+RudrapurDC	GreenChilli	50
+BareillyDC	GreenChilli	200
+SelakuiDC	GreenChilli	50
+RoorkeeDC	GreenChilli	50
+SrinagarDC	GreenChilli	1000
+KotdwarDC 	GreenChilli	50
+HaridwarDC	GreenChilli	1000
+PithoragarhDC	GreenChilli	60
+PilibhitDC	GreenChilli	30
+DelhiDC	        GreenChilli	1000
+
+;
+
+param X_p :=
+Tomato 1500
+Capsicum 2500
+BellPepper 750
+Cucumber 750
+GreenChilli 1500
+;
+
+param Q_i :=
+KhatimaP	100
+ThanoP	        100
+BanbasaP	100
+HaldwaniP	100
+RanipokhariP	100
+SitarganjP	100
+KichhaP	        100
+RudrapurP	100
+DoiwalaP	100
+SelakuiP	100
+RoorkeeP	100
+SrinagarP	100
+KotdwarP	100
+HaridwarP	100
+PithoragarhP	100
+
+;
+
+param S_ijp :=
+KhatimaP	KhatimaDC	Tomato	        1
+KhatimaP	KhatimaDC	Capsicum	1
+KhatimaP	KhatimaDC	BellPepper	1
+KhatimaP	KhatimaDC	Cucumber	1
+KhatimaP	KhatimaDC	GreenChilli	1
+KhatimaP	RishikeshDC	Tomato	        1
+KhatimaP	RishikeshDC	Capsicum	1
+KhatimaP	RishikeshDC	BellPepper	1
+KhatimaP	RishikeshDC	Cucumber	1
+KhatimaP	RishikeshDC	GreenChilli	1
+KhatimaP	ChampawatDC	Tomato	        1
+KhatimaP	ChampawatDC	Capsicum	1
+KhatimaP	ChampawatDC	BellPepper	1
+KhatimaP	ChampawatDC	Cucumber	1
+KhatimaP	ChampawatDC	GreenChilli	1
+KhatimaP	HaldwaniDC	Tomato	        1
+KhatimaP	HaldwaniDC	Capsicum	1
+KhatimaP	HaldwaniDC	BellPepper	1
+KhatimaP	HaldwaniDC	Cucumber	1
+KhatimaP	HaldwaniDC	GreenChilli	1
+KhatimaP	DehradunDC	Tomato	        1
+KhatimaP	DehradunDC	Capsicum	1
+KhatimaP	DehradunDC	BellPepper	1
+KhatimaP	DehradunDC	Cucumber	1
+KhatimaP	DehradunDC	GreenChilli	1
+KhatimaP	SitarganjDC	Tomato	        1
+KhatimaP	SitarganjDC	Capsicum	1
+KhatimaP	SitarganjDC	BellPepper	1
+KhatimaP	SitarganjDC	Cucumber	1
+KhatimaP	SitarganjDC	GreenChilli	1
+KhatimaP	KichhaDC	Tomato	        1
+KhatimaP	KichhaDC	Capsicum	1
+KhatimaP	KichhaDC	BellPepper	1
+KhatimaP	KichhaDC	Cucumber	1
+KhatimaP	KichhaDC	GreenChilli	1
+KhatimaP	RudrapurDC	Tomato	        1
+KhatimaP	RudrapurDC	Capsicum	1
+KhatimaP	RudrapurDC	BellPepper	1
+KhatimaP	RudrapurDC	Cucumber	1
+KhatimaP	RudrapurDC	GreenChilli	1
+KhatimaP	BareillyDC	Tomato	        1
+KhatimaP	BareillyDC	Capsicum	1
+KhatimaP	BareillyDC	BellPepper	1
+KhatimaP	BareillyDC	Cucumber	1
+KhatimaP	BareillyDC	GreenChilli	1
+KhatimaP	SelakuiDC	Tomato	        1
+KhatimaP	SelakuiDC	Capsicum	1
+KhatimaP	SelakuiDC	BellPepper	1
+KhatimaP	SelakuiDC	Cucumber	1
+KhatimaP	SelakuiDC	GreenChilli	1
+KhatimaP	RoorkeeDC	Tomato	        1
+KhatimaP	RoorkeeDC	Capsicum	1
+KhatimaP	RoorkeeDC	BellPepper	1
+KhatimaP	RoorkeeDC	Cucumber	1
+KhatimaP	RoorkeeDC	GreenChilli	1
+KhatimaP	SrinagarDC	Tomato	        0
+KhatimaP	SrinagarDC	Capsicum	0
+KhatimaP	SrinagarDC	BellPepper	0
+KhatimaP	SrinagarDC	Cucumber	0
+KhatimaP	SrinagarDC	GreenChilli	0
+KhatimaP	KotdwarDC 	Tomato	        1
+KhatimaP	KotdwarDC 	Capsicum	1
+KhatimaP	KotdwarDC 	BellPepper	1
+KhatimaP	KotdwarDC 	Cucumber	1
+KhatimaP	KotdwarDC 	GreenChilli	1
+KhatimaP	HaridwarDC	Tomato	        1
+KhatimaP	HaridwarDC	Capsicum	1
+KhatimaP	HaridwarDC	BellPepper	1
+KhatimaP	HaridwarDC	Cucumber	1
+KhatimaP	HaridwarDC	GreenChilli	1
+KhatimaP	PithoragarhDC	Tomato	        1
+KhatimaP	PithoragarhDC	Capsicum	1
+KhatimaP	PithoragarhDC	BellPepper	1
+KhatimaP	PithoragarhDC	Cucumber	1
+KhatimaP	PithoragarhDC	GreenChilli	1
+KhatimaP	PilibhitDC	Tomato	        1
+KhatimaP	PilibhitDC	Capsicum	1
+KhatimaP	PilibhitDC	BellPepper	1
+KhatimaP	PilibhitDC	Cucumber	1
+KhatimaP	PilibhitDC	GreenChilli	1
+KhatimaP	DelhiDC	        Tomato	        1
+KhatimaP	DelhiDC	        Capsicum	1
+KhatimaP	DelhiDC	        BellPepper	1
+KhatimaP	DelhiDC	        Cucumber	1
+KhatimaP	DelhiDC	        GreenChilli	1
+ThanoP	KhatimaDC	Tomato	        1
+ThanoP	KhatimaDC	Capsicum	1
+ThanoP	KhatimaDC	BellPepper	1
+ThanoP	KhatimaDC	Cucumber	1
+ThanoP	KhatimaDC	GreenChilli	1
+ThanoP	RishikeshDC	Tomato	        1
+ThanoP	RishikeshDC	Capsicum	1
+ThanoP	RishikeshDC	BellPepper	1
+ThanoP	RishikeshDC	Cucumber	1
+ThanoP	RishikeshDC	GreenChilli	1
+ThanoP	ChampawatDC	Tomato	        0
+ThanoP	ChampawatDC	Capsicum	0
+ThanoP	ChampawatDC	BellPepper	0
+ThanoP	ChampawatDC	Cucumber	0
+ThanoP	ChampawatDC	GreenChilli	0
+ThanoP	HaldwaniDC	Tomato	        1
+ThanoP	HaldwaniDC	Capsicum	1
+ThanoP	HaldwaniDC	BellPepper	1
+ThanoP	HaldwaniDC	Cucumber	1
+ThanoP	HaldwaniDC	GreenChilli	1
+ThanoP	DehradunDC	Tomato	        1
+ThanoP	DehradunDC	Capsicum	1
+ThanoP	DehradunDC	BellPepper	1
+ThanoP	DehradunDC	Cucumber	1
+ThanoP	DehradunDC	GreenChilli	1
+ThanoP	SitarganjDC	Tomato	        1
+ThanoP	SitarganjDC	Capsicum	1
+ThanoP	SitarganjDC	BellPepper	1
+ThanoP	SitarganjDC	Cucumber	1
+ThanoP	SitarganjDC	GreenChilli	1
+ThanoP	KichhaDC	Tomato	        1
+ThanoP	KichhaDC	Capsicum	1
+ThanoP	KichhaDC	BellPepper	1
+ThanoP	KichhaDC	Cucumber	1
+ThanoP	KichhaDC	GreenChilli	1
+ThanoP	RudrapurDC	Tomato	        1
+ThanoP	RudrapurDC	Capsicum	1
+ThanoP	RudrapurDC	BellPepper	1
+ThanoP	RudrapurDC	Cucumber	1
+ThanoP	RudrapurDC	GreenChilli	1
+ThanoP	BareillyDC	Tomato	        1
+ThanoP	BareillyDC	Capsicum	1
+ThanoP	BareillyDC	BellPepper	1
+ThanoP	BareillyDC	Cucumber	1
+ThanoP	BareillyDC	GreenChilli	1
+ThanoP	SelakuiDC	Tomato	        1
+ThanoP	SelakuiDC	Capsicum	1
+ThanoP	SelakuiDC	BellPepper	1
+ThanoP	SelakuiDC	Cucumber	1
+ThanoP	SelakuiDC	GreenChilli	1
+ThanoP	RoorkeeDC	Tomato	        1
+ThanoP	RoorkeeDC	Capsicum	1
+ThanoP	RoorkeeDC	BellPepper	1
+ThanoP	RoorkeeDC	Cucumber	1
+ThanoP	RoorkeeDC	GreenChilli	1
+ThanoP	SrinagarDC	Tomato	        1
+ThanoP	SrinagarDC	Capsicum	1
+ThanoP	SrinagarDC	BellPepper	1
+ThanoP	SrinagarDC	Cucumber	1
+ThanoP	SrinagarDC	GreenChilli	1
+ThanoP	KotdwarDC 	Tomato	        1
+ThanoP	KotdwarDC 	Capsicum	1
+ThanoP	KotdwarDC 	BellPepper	1
+ThanoP	KotdwarDC 	Cucumber	1
+ThanoP	KotdwarDC 	GreenChilli	1
+ThanoP	HaridwarDC	Tomato	        1
+ThanoP	HaridwarDC	Capsicum	1
+ThanoP	HaridwarDC	BellPepper	1
+ThanoP	HaridwarDC	Cucumber	1
+ThanoP	HaridwarDC	GreenChilli	1
+ThanoP	PithoragarhDC	Tomato	        0
+ThanoP	PithoragarhDC	Capsicum	0
+ThanoP	PithoragarhDC	BellPepper	0
+ThanoP	PithoragarhDC	Cucumber	0
+ThanoP	PithoragarhDC	GreenChilli	0
+ThanoP	PilibhitDC	Tomato	        1
+ThanoP	PilibhitDC	Capsicum	1
+ThanoP	PilibhitDC	BellPepper	1
+ThanoP	PilibhitDC	Cucumber	1
+ThanoP	PilibhitDC	GreenChilli	1
+ThanoP	DelhiDC	        Tomato	        1
+ThanoP	DelhiDC	        Capsicum	1
+ThanoP	DelhiDC	        BellPepper	1
+ThanoP	DelhiDC	        Cucumber	1
+ThanoP	DelhiDC	        GreenChilli	1
+BanbasaP	KhatimaDC	Tomato	1
+BanbasaP	KhatimaDC	Capsicum	1
+BanbasaP	KhatimaDC	BellPepper	1
+BanbasaP	KhatimaDC	Cucumber	1
+BanbasaP	KhatimaDC	GreenChilli	1
+BanbasaP	RishikeshDC	Tomato	1
+BanbasaP	RishikeshDC	Capsicum	1
+BanbasaP	RishikeshDC	BellPepper	1
+BanbasaP	RishikeshDC	Cucumber	1
+BanbasaP	RishikeshDC	GreenChilli	1
+BanbasaP	ChampawatDC	Tomato	1
+BanbasaP	ChampawatDC	Capsicum	1
+BanbasaP	ChampawatDC	BellPepper	1
+BanbasaP	ChampawatDC	Cucumber	1
+BanbasaP	ChampawatDC	GreenChilli	1
+BanbasaP	HaldwaniDC	Tomato	1
+BanbasaP	HaldwaniDC	Capsicum	1
+BanbasaP	HaldwaniDC	BellPepper	1
+BanbasaP	HaldwaniDC	Cucumber	1
+BanbasaP	HaldwaniDC	GreenChilli	1
+BanbasaP	DehradunDC	Tomato	1
+BanbasaP	DehradunDC	Capsicum	1
+BanbasaP	DehradunDC	BellPepper	1
+BanbasaP	DehradunDC	Cucumber	1
+BanbasaP	DehradunDC	GreenChilli	1
+BanbasaP	SitarganjDC	Tomato	1
+BanbasaP	SitarganjDC	Capsicum	1
+BanbasaP	SitarganjDC	BellPepper	1
+BanbasaP	SitarganjDC	Cucumber	1
+BanbasaP	SitarganjDC	GreenChilli	1
+BanbasaP	KichhaDC	Tomato	1
+BanbasaP	KichhaDC	Capsicum	1
+BanbasaP	KichhaDC	BellPepper	1
+BanbasaP	KichhaDC	Cucumber	1
+BanbasaP	KichhaDC	GreenChilli	1
+BanbasaP	RudrapurDC	Tomato	1
+BanbasaP	RudrapurDC	Capsicum	1
+BanbasaP	RudrapurDC	BellPepper	1
+BanbasaP	RudrapurDC	Cucumber	1
+BanbasaP	RudrapurDC	GreenChilli	1
+BanbasaP	BareillyDC	Tomato	1
+BanbasaP	BareillyDC	Capsicum	1
+BanbasaP	BareillyDC	BellPepper	1
+BanbasaP	BareillyDC	Cucumber	1
+BanbasaP	BareillyDC	GreenChilli	1
+BanbasaP	SelakuiDC	Tomato	1
+BanbasaP	SelakuiDC	Capsicum	1
+BanbasaP	SelakuiDC	BellPepper	1
+BanbasaP	SelakuiDC	Cucumber	1
+BanbasaP	SelakuiDC	GreenChilli	1
+BanbasaP	RoorkeeDC	Tomato	1
+BanbasaP	RoorkeeDC	Capsicum	1
+BanbasaP	RoorkeeDC	BellPepper	1
+BanbasaP	RoorkeeDC	Cucumber	1
+BanbasaP	RoorkeeDC	GreenChilli	1
+BanbasaP	SrinagarDC	Tomato	0
+BanbasaP	SrinagarDC	Capsicum	0
+BanbasaP	SrinagarDC	BellPepper	0
+BanbasaP	SrinagarDC	Cucumber	0
+BanbasaP	SrinagarDC	GreenChilli	0
+BanbasaP	KotdwarDC 	Tomato	1
+BanbasaP	KotdwarDC 	Capsicum	1
+BanbasaP	KotdwarDC 	BellPepper	1
+BanbasaP	KotdwarDC 	Cucumber	1
+BanbasaP	KotdwarDC 	GreenChilli	1
+BanbasaP	HaridwarDC	Tomato	1
+BanbasaP	HaridwarDC	Capsicum	1
+BanbasaP	HaridwarDC	BellPepper	1
+BanbasaP	HaridwarDC	Cucumber	1
+BanbasaP	HaridwarDC	GreenChilli	1
+BanbasaP	PithoragarhDC	Tomato	1
+BanbasaP	PithoragarhDC	Capsicum	1
+BanbasaP	PithoragarhDC	BellPepper	1
+BanbasaP	PithoragarhDC	Cucumber	1
+BanbasaP	PithoragarhDC	GreenChilli	1
+BanbasaP	PilibhitDC	Tomato	1
+BanbasaP	PilibhitDC	Capsicum	1
+BanbasaP	PilibhitDC	BellPepper	1
+BanbasaP	PilibhitDC	Cucumber	1
+BanbasaP	PilibhitDC	GreenChilli	1
+BanbasaP	DelhiDC	Tomato	1
+BanbasaP	DelhiDC	Capsicum	1
+BanbasaP	DelhiDC	BellPepper	1
+BanbasaP	DelhiDC	Cucumber	1
+BanbasaP	DelhiDC	GreenChilli	1
+HaldwaniP	KhatimaDC	Tomato	1
+HaldwaniP	KhatimaDC	Capsicum	1
+HaldwaniP	KhatimaDC	BellPepper	1
+HaldwaniP	KhatimaDC	Cucumber	1
+HaldwaniP	KhatimaDC	GreenChilli	1
+HaldwaniP	RishikeshDC	Tomato	1
+HaldwaniP	RishikeshDC	Capsicum	1
+HaldwaniP	RishikeshDC	BellPepper	1
+HaldwaniP	RishikeshDC	Cucumber	1
+HaldwaniP	RishikeshDC	GreenChilli	1
+HaldwaniP	ChampawatDC	Tomato	1
+HaldwaniP	ChampawatDC	Capsicum	1
+HaldwaniP	ChampawatDC	BellPepper	1
+HaldwaniP	ChampawatDC	Cucumber	1
+HaldwaniP	ChampawatDC	GreenChilli	1
+HaldwaniP	HaldwaniDC	Tomato	1
+HaldwaniP	HaldwaniDC	Capsicum	1
+HaldwaniP	HaldwaniDC	BellPepper	1
+HaldwaniP	HaldwaniDC	Cucumber	1
+HaldwaniP	HaldwaniDC	GreenChilli	1
+HaldwaniP	DehradunDC	Tomato	1
+HaldwaniP	DehradunDC	Capsicum	1
+HaldwaniP	DehradunDC	BellPepper	1
+HaldwaniP	DehradunDC	Cucumber	1
+HaldwaniP	DehradunDC	GreenChilli	1
+HaldwaniP	SitarganjDC	Tomato	1
+HaldwaniP	SitarganjDC	Capsicum	1
+HaldwaniP	SitarganjDC	BellPepper	1
+HaldwaniP	SitarganjDC	Cucumber	1
+HaldwaniP	SitarganjDC	GreenChilli	1
+HaldwaniP	KichhaDC	Tomato	1
+HaldwaniP	KichhaDC	Capsicum	1
+HaldwaniP	KichhaDC	BellPepper	1
+HaldwaniP	KichhaDC	Cucumber	1
+HaldwaniP	KichhaDC	GreenChilli	1
+HaldwaniP	RudrapurDC	Tomato	1
+HaldwaniP	RudrapurDC	Capsicum	1
+HaldwaniP	RudrapurDC	BellPepper	1
+HaldwaniP	RudrapurDC	Cucumber	1
+HaldwaniP	RudrapurDC	GreenChilli	1
+HaldwaniP	BareillyDC	Tomato	1
+HaldwaniP	BareillyDC	Capsicum	1
+HaldwaniP	BareillyDC	BellPepper	1
+HaldwaniP	BareillyDC	Cucumber	1
+HaldwaniP	BareillyDC	GreenChilli	1
+HaldwaniP	SelakuiDC	Tomato	1
+HaldwaniP	SelakuiDC	Capsicum	1
+HaldwaniP	SelakuiDC	BellPepper	1
+HaldwaniP	SelakuiDC	Cucumber	1
+HaldwaniP	SelakuiDC	GreenChilli	1
+HaldwaniP	RoorkeeDC	Tomato	1
+HaldwaniP	RoorkeeDC	Capsicum	1
+HaldwaniP	RoorkeeDC	BellPepper	1
+HaldwaniP	RoorkeeDC	Cucumber	1
+HaldwaniP	RoorkeeDC	GreenChilli	1
+HaldwaniP	SrinagarDC	Tomato	1
+HaldwaniP	SrinagarDC	Capsicum	1
+HaldwaniP	SrinagarDC	BellPepper	1
+HaldwaniP	SrinagarDC	Cucumber	1
+HaldwaniP	SrinagarDC	GreenChilli	1
+HaldwaniP	KotdwarDC 	Tomato	1
+HaldwaniP	KotdwarDC 	Capsicum	1
+HaldwaniP	KotdwarDC 	BellPepper	1
+HaldwaniP	KotdwarDC 	Cucumber	1
+HaldwaniP	KotdwarDC 	GreenChilli	1
+HaldwaniP	HaridwarDC	Tomato	1
+HaldwaniP	HaridwarDC	Capsicum	1
+HaldwaniP	HaridwarDC	BellPepper	1
+HaldwaniP	HaridwarDC	Cucumber	1
+HaldwaniP	HaridwarDC	GreenChilli	1
+HaldwaniP	PithoragarhDC	Tomato	1
+HaldwaniP	PithoragarhDC	Capsicum	1
+HaldwaniP	PithoragarhDC	BellPepper	1
+HaldwaniP	PithoragarhDC	Cucumber	1
+HaldwaniP	PithoragarhDC	GreenChilli	1
+HaldwaniP	PilibhitDC	Tomato	1
+HaldwaniP	PilibhitDC	Capsicum	1
+HaldwaniP	PilibhitDC	BellPepper	1
+HaldwaniP	PilibhitDC	Cucumber	1
+HaldwaniP	PilibhitDC	GreenChilli	1
+HaldwaniP	DelhiDC	Tomato	1
+HaldwaniP	DelhiDC	Capsicum	1
+HaldwaniP	DelhiDC	BellPepper	1
+HaldwaniP	DelhiDC	Cucumber	1
+HaldwaniP	DelhiDC	GreenChilli	1
+RanipokhariP	KhatimaDC	Tomato	1
+RanipokhariP	KhatimaDC	Capsicum	1
+RanipokhariP	KhatimaDC	BellPepper	1
+RanipokhariP	KhatimaDC	Cucumber	1
+RanipokhariP	KhatimaDC	GreenChilli	1
+RanipokhariP	RishikeshDC	Tomato	1
+RanipokhariP	RishikeshDC	Capsicum	1
+RanipokhariP	RishikeshDC	BellPepper	1
+RanipokhariP	RishikeshDC	Cucumber	1
+RanipokhariP	RishikeshDC	GreenChilli	1
+RanipokhariP	ChampawatDC	Tomato	0
+RanipokhariP	ChampawatDC	Capsicum	0
+RanipokhariP	ChampawatDC	BellPepper	0
+RanipokhariP	ChampawatDC	Cucumber	0
+RanipokhariP	ChampawatDC	GreenChilli	0
+RanipokhariP	HaldwaniDC	Tomato	1
+RanipokhariP	HaldwaniDC	Capsicum	1
+RanipokhariP	HaldwaniDC	BellPepper	1
+RanipokhariP	HaldwaniDC	Cucumber	1
+RanipokhariP	HaldwaniDC	GreenChilli	1
+RanipokhariP	DehradunDC	Tomato	1
+RanipokhariP	DehradunDC	Capsicum	1
+RanipokhariP	DehradunDC	BellPepper	1
+RanipokhariP	DehradunDC	Cucumber	1
+RanipokhariP	DehradunDC	GreenChilli	1
+RanipokhariP	SitarganjDC	Tomato	1
+RanipokhariP	SitarganjDC	Capsicum	1
+RanipokhariP	SitarganjDC	BellPepper	1
+RanipokhariP	SitarganjDC	Cucumber	1
+RanipokhariP	SitarganjDC	GreenChilli	1
+RanipokhariP	KichhaDC	Tomato	1
+RanipokhariP	KichhaDC	Capsicum	1
+RanipokhariP	KichhaDC	BellPepper	1
+RanipokhariP	KichhaDC	Cucumber	1
+RanipokhariP	KichhaDC	GreenChilli	1
+RanipokhariP	RudrapurDC	Tomato	1
+RanipokhariP	RudrapurDC	Capsicum	1
+RanipokhariP	RudrapurDC	BellPepper	1
+RanipokhariP	RudrapurDC	Cucumber	1
+RanipokhariP	RudrapurDC	GreenChilli	1
+RanipokhariP	BareillyDC	Tomato	1
+RanipokhariP	BareillyDC	Capsicum	1
+RanipokhariP	BareillyDC	BellPepper	1
+RanipokhariP	BareillyDC	Cucumber	1
+RanipokhariP	BareillyDC	GreenChilli	1
+RanipokhariP	SelakuiDC	Tomato	1
+RanipokhariP	SelakuiDC	Capsicum	1
+RanipokhariP	SelakuiDC	BellPepper	1
+RanipokhariP	SelakuiDC	Cucumber	1
+RanipokhariP	SelakuiDC	GreenChilli	1
+RanipokhariP	RoorkeeDC	Tomato	1
+RanipokhariP	RoorkeeDC	Capsicum	1
+RanipokhariP	RoorkeeDC	BellPepper	1
+RanipokhariP	RoorkeeDC	Cucumber	1
+RanipokhariP	RoorkeeDC	GreenChilli	1
+RanipokhariP	SrinagarDC	Tomato	1
+RanipokhariP	SrinagarDC	Capsicum	1
+RanipokhariP	SrinagarDC	BellPepper	1
+RanipokhariP	SrinagarDC	Cucumber	1
+RanipokhariP	SrinagarDC	GreenChilli	1
+RanipokhariP	KotdwarDC 	Tomato	1
+RanipokhariP	KotdwarDC 	Capsicum	1
+RanipokhariP	KotdwarDC 	BellPepper	1
+RanipokhariP	KotdwarDC 	Cucumber	1
+RanipokhariP	KotdwarDC 	GreenChilli	1
+RanipokhariP	HaridwarDC	Tomato	1
+RanipokhariP	HaridwarDC	Capsicum	1
+RanipokhariP	HaridwarDC	BellPepper	1
+RanipokhariP	HaridwarDC	Cucumber	1
+RanipokhariP	HaridwarDC	GreenChilli	1
+RanipokhariP	PithoragarhDC	Tomato	0
+RanipokhariP	PithoragarhDC	Capsicum	0
+RanipokhariP	PithoragarhDC	BellPepper	0
+RanipokhariP	PithoragarhDC	Cucumber	0
+RanipokhariP	PithoragarhDC	GreenChilli	0
+RanipokhariP	PilibhitDC	Tomato	1
+RanipokhariP	PilibhitDC	Capsicum	1
+RanipokhariP	PilibhitDC	BellPepper	1
+RanipokhariP	PilibhitDC	Cucumber	1
+RanipokhariP	PilibhitDC	GreenChilli	1
+RanipokhariP	DelhiDC	Tomato	1
+RanipokhariP	DelhiDC	Capsicum	1
+RanipokhariP	DelhiDC	BellPepper	1
+RanipokhariP	DelhiDC	Cucumber	1
+RanipokhariP	DelhiDC	GreenChilli	1
+SitarganjP	KhatimaDC	Tomato	1
+SitarganjP	KhatimaDC	Capsicum	1
+SitarganjP	KhatimaDC	BellPepper	1
+SitarganjP	KhatimaDC	Cucumber	1
+SitarganjP	KhatimaDC	GreenChilli	1
+SitarganjP	RishikeshDC	Tomato	1
+SitarganjP	RishikeshDC	Capsicum	1
+SitarganjP	RishikeshDC	BellPepper	1
+SitarganjP	RishikeshDC	Cucumber	1
+SitarganjP	RishikeshDC	GreenChilli	1
+SitarganjP	ChampawatDC	Tomato	1
+SitarganjP	ChampawatDC	Capsicum	1
+SitarganjP	ChampawatDC	BellPepper	1
+SitarganjP	ChampawatDC	Cucumber	1
+SitarganjP	ChampawatDC	GreenChilli	1
+SitarganjP	HaldwaniDC	Tomato	1
+SitarganjP	HaldwaniDC	Capsicum	1
+SitarganjP	HaldwaniDC	BellPepper	1
+SitarganjP	HaldwaniDC	Cucumber	1
+SitarganjP	HaldwaniDC	GreenChilli	1
+SitarganjP	DehradunDC	Tomato	1
+SitarganjP	DehradunDC	Capsicum	1
+SitarganjP	DehradunDC	BellPepper	1
+SitarganjP	DehradunDC	Cucumber	1
+SitarganjP	DehradunDC	GreenChilli	1
+SitarganjP	SitarganjDC	Tomato	1
+SitarganjP	SitarganjDC	Capsicum	1
+SitarganjP	SitarganjDC	BellPepper	1
+SitarganjP	SitarganjDC	Cucumber	1
+SitarganjP	SitarganjDC	GreenChilli	1
+SitarganjP	KichhaDC	Tomato	1
+SitarganjP	KichhaDC	Capsicum	1
+SitarganjP	KichhaDC	BellPepper	1
+SitarganjP	KichhaDC	Cucumber	1
+SitarganjP	KichhaDC	GreenChilli	1
+SitarganjP	RudrapurDC	Tomato	1
+SitarganjP	RudrapurDC	Capsicum	1
+SitarganjP	RudrapurDC	BellPepper	1
+SitarganjP	RudrapurDC	Cucumber	1
+SitarganjP	RudrapurDC	GreenChilli	1
+SitarganjP	BareillyDC	Tomato	1
+SitarganjP	BareillyDC	Capsicum	1
+SitarganjP	BareillyDC	BellPepper	1
+SitarganjP	BareillyDC	Cucumber	1
+SitarganjP	BareillyDC	GreenChilli	1
+SitarganjP	SelakuiDC	Tomato	1
+SitarganjP	SelakuiDC	Capsicum	1
+SitarganjP	SelakuiDC	BellPepper	1
+SitarganjP	SelakuiDC	Cucumber	1
+SitarganjP	SelakuiDC	GreenChilli	1
+SitarganjP	RoorkeeDC	Tomato	1
+SitarganjP	RoorkeeDC	Capsicum	1
+SitarganjP	RoorkeeDC	BellPepper	1
+SitarganjP	RoorkeeDC	Cucumber	1
+SitarganjP	RoorkeeDC	GreenChilli	1
+SitarganjP	SrinagarDC	Tomato	1
+SitarganjP	SrinagarDC	Capsicum	1
+SitarganjP	SrinagarDC	BellPepper	1
+SitarganjP	SrinagarDC	Cucumber	1
+SitarganjP	SrinagarDC	GreenChilli	1
+SitarganjP	KotdwarDC 	Tomato	1
+SitarganjP	KotdwarDC 	Capsicum	1
+SitarganjP	KotdwarDC 	BellPepper	1
+SitarganjP	KotdwarDC 	Cucumber	1
+SitarganjP	KotdwarDC 	GreenChilli	1
+SitarganjP	HaridwarDC	Tomato	1
+SitarganjP	HaridwarDC	Capsicum	1
+SitarganjP	HaridwarDC	BellPepper	1
+SitarganjP	HaridwarDC	Cucumber	1
+SitarganjP	HaridwarDC	GreenChilli	1
+SitarganjP	PithoragarhDC	Tomato	1
+SitarganjP	PithoragarhDC	Capsicum	1
+SitarganjP	PithoragarhDC	BellPepper	1
+SitarganjP	PithoragarhDC	Cucumber	1
+SitarganjP	PithoragarhDC	GreenChilli	1
+SitarganjP	PilibhitDC	Tomato	1
+SitarganjP	PilibhitDC	Capsicum	1
+SitarganjP	PilibhitDC	BellPepper	1
+SitarganjP	PilibhitDC	Cucumber	1
+SitarganjP	PilibhitDC	GreenChilli	1
+SitarganjP	DelhiDC	Tomato	1
+SitarganjP	DelhiDC	Capsicum	1
+SitarganjP	DelhiDC	BellPepper	1
+SitarganjP	DelhiDC	Cucumber	1
+SitarganjP	DelhiDC	GreenChilli	1
+KichhaP	KhatimaDC	Tomato	1
+KichhaP	KhatimaDC	Capsicum	1
+KichhaP	KhatimaDC	BellPepper	1
+KichhaP	KhatimaDC	Cucumber	1
+KichhaP	KhatimaDC	GreenChilli	1
+KichhaP	RishikeshDC	Tomato	1
+KichhaP	RishikeshDC	Capsicum	1
+KichhaP	RishikeshDC	BellPepper	1
+KichhaP	RishikeshDC	Cucumber	1
+KichhaP	RishikeshDC	GreenChilli	1
+KichhaP	ChampawatDC	Tomato	1
+KichhaP	ChampawatDC	Capsicum	1
+KichhaP	ChampawatDC	BellPepper	1
+KichhaP	ChampawatDC	Cucumber	1
+KichhaP	ChampawatDC	GreenChilli	1
+KichhaP	HaldwaniDC	Tomato	1
+KichhaP	HaldwaniDC	Capsicum	1
+KichhaP	HaldwaniDC	BellPepper	1
+KichhaP	HaldwaniDC	Cucumber	1
+KichhaP	HaldwaniDC	GreenChilli	1
+KichhaP	DehradunDC	Tomato	1
+KichhaP	DehradunDC	Capsicum	1
+KichhaP	DehradunDC	BellPepper	1
+KichhaP	DehradunDC	Cucumber	1
+KichhaP	DehradunDC	GreenChilli	1
+KichhaP	SitarganjDC	Tomato	1
+KichhaP	SitarganjDC	Capsicum	1
+KichhaP	SitarganjDC	BellPepper	1
+KichhaP	SitarganjDC	Cucumber	1
+KichhaP	SitarganjDC	GreenChilli	1
+KichhaP	KichhaDC	Tomato	1
+KichhaP	KichhaDC	Capsicum	1
+KichhaP	KichhaDC	BellPepper	1
+KichhaP	KichhaDC	Cucumber	1
+KichhaP	KichhaDC	GreenChilli	1
+KichhaP	RudrapurDC	Tomato	1
+KichhaP	RudrapurDC	Capsicum	1
+KichhaP	RudrapurDC	BellPepper	1
+KichhaP	RudrapurDC	Cucumber	1
+KichhaP	RudrapurDC	GreenChilli	1
+KichhaP	BareillyDC	Tomato	1
+KichhaP	BareillyDC	Capsicum	1
+KichhaP	BareillyDC	BellPepper	1
+KichhaP	BareillyDC	Cucumber	1
+KichhaP	BareillyDC	GreenChilli	1
+KichhaP	SelakuiDC	Tomato	1
+KichhaP	SelakuiDC	Capsicum	1
+KichhaP	SelakuiDC	BellPepper	1
+KichhaP	SelakuiDC	Cucumber	1
+KichhaP	SelakuiDC	GreenChilli	1
+KichhaP	RoorkeeDC	Tomato	1
+KichhaP	RoorkeeDC	Capsicum	1
+KichhaP	RoorkeeDC	BellPepper	1
+KichhaP	RoorkeeDC	Cucumber	1
+KichhaP	RoorkeeDC	GreenChilli	1
+KichhaP	SrinagarDC	Tomato	1
+KichhaP	SrinagarDC	Capsicum	1
+KichhaP	SrinagarDC	BellPepper	1
+KichhaP	SrinagarDC	Cucumber	1
+KichhaP	SrinagarDC	GreenChilli	1
+KichhaP	KotdwarDC 	Tomato	1
+KichhaP	KotdwarDC 	Capsicum	1
+KichhaP	KotdwarDC 	BellPepper	1
+KichhaP	KotdwarDC 	Cucumber	1
+KichhaP	KotdwarDC 	GreenChilli	1
+KichhaP	HaridwarDC	Tomato	1
+KichhaP	HaridwarDC	Capsicum	1
+KichhaP	HaridwarDC	BellPepper	1
+KichhaP	HaridwarDC	Cucumber	1
+KichhaP	HaridwarDC	GreenChilli	1
+KichhaP	PithoragarhDC	Tomato	1
+KichhaP	PithoragarhDC	Capsicum	1
+KichhaP	PithoragarhDC	BellPepper	1
+KichhaP	PithoragarhDC	Cucumber	1
+KichhaP	PithoragarhDC	GreenChilli	1
+KichhaP	PilibhitDC	Tomato	1
+KichhaP	PilibhitDC	Capsicum	1
+KichhaP	PilibhitDC	BellPepper	1
+KichhaP	PilibhitDC	Cucumber	1
+KichhaP	PilibhitDC	GreenChilli	1
+KichhaP	DelhiDC	Tomato	1
+KichhaP	DelhiDC	Capsicum	1
+KichhaP	DelhiDC	BellPepper	1
+KichhaP	DelhiDC	Cucumber	1
+KichhaP	DelhiDC	GreenChilli	1
+RudrapurP	KhatimaDC	Tomato	1
+RudrapurP	KhatimaDC	Capsicum	1
+RudrapurP	KhatimaDC	BellPepper	1
+RudrapurP	KhatimaDC	Cucumber	1
+RudrapurP	KhatimaDC	GreenChilli	1
+RudrapurP	RishikeshDC	Tomato	1
+RudrapurP	RishikeshDC	Capsicum	1
+RudrapurP	RishikeshDC	BellPepper	1
+RudrapurP	RishikeshDC	Cucumber	1
+RudrapurP	RishikeshDC	GreenChilli	1
+RudrapurP	ChampawatDC	Tomato	1
+RudrapurP	ChampawatDC	Capsicum	1
+RudrapurP	ChampawatDC	BellPepper	1
+RudrapurP	ChampawatDC	Cucumber	1
+RudrapurP	ChampawatDC	GreenChilli	1
+RudrapurP	HaldwaniDC	Tomato	1
+RudrapurP	HaldwaniDC	Capsicum	1
+RudrapurP	HaldwaniDC	BellPepper	1
+RudrapurP	HaldwaniDC	Cucumber	1
+RudrapurP	HaldwaniDC	GreenChilli	1
+RudrapurP	DehradunDC	Tomato	1
+RudrapurP	DehradunDC	Capsicum	1
+RudrapurP	DehradunDC	BellPepper	1
+RudrapurP	DehradunDC	Cucumber	1
+RudrapurP	DehradunDC	GreenChilli	1
+RudrapurP	SitarganjDC	Tomato	1
+RudrapurP	SitarganjDC	Capsicum	1
+RudrapurP	SitarganjDC	BellPepper	1
+RudrapurP	SitarganjDC	Cucumber	1
+RudrapurP	SitarganjDC	GreenChilli	1
+RudrapurP	KichhaDC	Tomato	1
+RudrapurP	KichhaDC	Capsicum	1
+RudrapurP	KichhaDC	BellPepper	1
+RudrapurP	KichhaDC	Cucumber	1
+RudrapurP	KichhaDC	GreenChilli	1
+RudrapurP	RudrapurDC	Tomato	1
+RudrapurP	RudrapurDC	Capsicum	1
+RudrapurP	RudrapurDC	BellPepper	1
+RudrapurP	RudrapurDC	Cucumber	1
+RudrapurP	RudrapurDC	GreenChilli	1
+RudrapurP	BareillyDC	Tomato	1
+RudrapurP	BareillyDC	Capsicum	1
+RudrapurP	BareillyDC	BellPepper	1
+RudrapurP	BareillyDC	Cucumber	1
+RudrapurP	BareillyDC	GreenChilli	1
+RudrapurP	SelakuiDC	Tomato	1
+RudrapurP	SelakuiDC	Capsicum	1
+RudrapurP	SelakuiDC	BellPepper	1
+RudrapurP	SelakuiDC	Cucumber	1
+RudrapurP	SelakuiDC	GreenChilli	1
+RudrapurP	RoorkeeDC	Tomato	1
+RudrapurP	RoorkeeDC	Capsicum	1
+RudrapurP	RoorkeeDC	BellPepper	1
+RudrapurP	RoorkeeDC	Cucumber	1
+RudrapurP	RoorkeeDC	GreenChilli	1
+RudrapurP	SrinagarDC	Tomato	1
+RudrapurP	SrinagarDC	Capsicum	1
+RudrapurP	SrinagarDC	BellPepper	1
+RudrapurP	SrinagarDC	Cucumber	1
+RudrapurP	SrinagarDC	GreenChilli	1
+RudrapurP	KotdwarDC 	Tomato	1
+RudrapurP	KotdwarDC 	Capsicum	1
+RudrapurP	KotdwarDC 	BellPepper	1
+RudrapurP	KotdwarDC 	Cucumber	1
+RudrapurP	KotdwarDC 	GreenChilli	1
+RudrapurP	HaridwarDC	Tomato	1
+RudrapurP	HaridwarDC	Capsicum	1
+RudrapurP	HaridwarDC	BellPepper	1
+RudrapurP	HaridwarDC	Cucumber	1
+RudrapurP	HaridwarDC	GreenChilli	1
+RudrapurP	PithoragarhDC	Tomato	1
+RudrapurP	PithoragarhDC	Capsicum	1
+RudrapurP	PithoragarhDC	BellPepper	1
+RudrapurP	PithoragarhDC	Cucumber	1
+RudrapurP	PithoragarhDC	GreenChilli	1
+RudrapurP	PilibhitDC	Tomato	1
+RudrapurP	PilibhitDC	Capsicum	1
+RudrapurP	PilibhitDC	BellPepper	1
+RudrapurP	PilibhitDC	Cucumber	1
+RudrapurP	PilibhitDC	GreenChilli	1
+RudrapurP	DelhiDC	Tomato	1
+RudrapurP	DelhiDC	Capsicum	1
+RudrapurP	DelhiDC	BellPepper	1
+RudrapurP	DelhiDC	Cucumber	1
+RudrapurP	DelhiDC	GreenChilli	1
+DoiwalaP	KhatimaDC	Tomato	1
+DoiwalaP	KhatimaDC	Capsicum	1
+DoiwalaP	KhatimaDC	BellPepper	1
+DoiwalaP	KhatimaDC	Cucumber	1
+DoiwalaP	KhatimaDC	GreenChilli	1
+DoiwalaP	RishikeshDC	Tomato	1
+DoiwalaP	RishikeshDC	Capsicum	1
+DoiwalaP	RishikeshDC	BellPepper	1
+DoiwalaP	RishikeshDC	Cucumber	1
+DoiwalaP	RishikeshDC	GreenChilli	1
+DoiwalaP	ChampawatDC	Tomato	0
+DoiwalaP	ChampawatDC	Capsicum	0
+DoiwalaP	ChampawatDC	BellPepper	0
+DoiwalaP	ChampawatDC	Cucumber	0
+DoiwalaP	ChampawatDC	GreenChilli	0
+DoiwalaP	HaldwaniDC	Tomato	1
+DoiwalaP	HaldwaniDC	Capsicum	1
+DoiwalaP	HaldwaniDC	BellPepper	1
+DoiwalaP	HaldwaniDC	Cucumber	1
+DoiwalaP	HaldwaniDC	GreenChilli	1
+DoiwalaP	DehradunDC	Tomato	1
+DoiwalaP	DehradunDC	Capsicum	1
+DoiwalaP	DehradunDC	BellPepper	1
+DoiwalaP	DehradunDC	Cucumber	1
+DoiwalaP	DehradunDC	GreenChilli	1
+DoiwalaP	SitarganjDC	Tomato	1
+DoiwalaP	SitarganjDC	Capsicum	1
+DoiwalaP	SitarganjDC	BellPepper	1
+DoiwalaP	SitarganjDC	Cucumber	1
+DoiwalaP	SitarganjDC	GreenChilli	1
+DoiwalaP	KichhaDC	Tomato	1
+DoiwalaP	KichhaDC	Capsicum	1
+DoiwalaP	KichhaDC	BellPepper	1
+DoiwalaP	KichhaDC	Cucumber	1
+DoiwalaP	KichhaDC	GreenChilli	1
+DoiwalaP	RudrapurDC	Tomato	1
+DoiwalaP	RudrapurDC	Capsicum	1
+DoiwalaP	RudrapurDC	BellPepper	1
+DoiwalaP	RudrapurDC	Cucumber	1
+DoiwalaP	RudrapurDC	GreenChilli	1
+DoiwalaP	BareillyDC	Tomato	1
+DoiwalaP	BareillyDC	Capsicum	1
+DoiwalaP	BareillyDC	BellPepper	1
+DoiwalaP	BareillyDC	Cucumber	1
+DoiwalaP	BareillyDC	GreenChilli	1
+DoiwalaP	SelakuiDC	Tomato	1
+DoiwalaP	SelakuiDC	Capsicum	1
+DoiwalaP	SelakuiDC	BellPepper	1
+DoiwalaP	SelakuiDC	Cucumber	1
+DoiwalaP	SelakuiDC	GreenChilli	1
+DoiwalaP	RoorkeeDC	Tomato	1
+DoiwalaP	RoorkeeDC	Capsicum	1
+DoiwalaP	RoorkeeDC	BellPepper	1
+DoiwalaP	RoorkeeDC	Cucumber	1
+DoiwalaP	RoorkeeDC	GreenChilli	1
+DoiwalaP	SrinagarDC	Tomato	1
+DoiwalaP	SrinagarDC	Capsicum	1
+DoiwalaP	SrinagarDC	BellPepper	1
+DoiwalaP	SrinagarDC	Cucumber	1
+DoiwalaP	SrinagarDC	GreenChilli	1
+DoiwalaP	KotdwarDC 	Tomato	1
+DoiwalaP	KotdwarDC 	Capsicum	1
+DoiwalaP	KotdwarDC 	BellPepper	1
+DoiwalaP	KotdwarDC 	Cucumber	1
+DoiwalaP	KotdwarDC 	GreenChilli	1
+DoiwalaP	HaridwarDC	Tomato	1
+DoiwalaP	HaridwarDC	Capsicum	1
+DoiwalaP	HaridwarDC	BellPepper	1
+DoiwalaP	HaridwarDC	Cucumber	1
+DoiwalaP	HaridwarDC	GreenChilli	1
+DoiwalaP	PithoragarhDC	Tomato	0
+DoiwalaP	PithoragarhDC	Capsicum	0
+DoiwalaP	PithoragarhDC	BellPepper	0
+DoiwalaP	PithoragarhDC	Cucumber	0
+DoiwalaP	PithoragarhDC	GreenChilli	0
+DoiwalaP	PilibhitDC	Tomato	1
+DoiwalaP	PilibhitDC	Capsicum	1
+DoiwalaP	PilibhitDC	BellPepper	1
+DoiwalaP	PilibhitDC	Cucumber	1
+DoiwalaP	PilibhitDC	GreenChilli	1
+DoiwalaP	DelhiDC	Tomato	1
+DoiwalaP	DelhiDC	Capsicum	1
+DoiwalaP	DelhiDC	BellPepper	1
+DoiwalaP	DelhiDC	Cucumber	1
+DoiwalaP	DelhiDC	GreenChilli	1
+SelakuiP	KhatimaDC	Tomato	1
+SelakuiP	KhatimaDC	Capsicum	1
+SelakuiP	KhatimaDC	BellPepper	1
+SelakuiP	KhatimaDC	Cucumber	1
+SelakuiP	KhatimaDC	GreenChilli	1
+SelakuiP	RishikeshDC	Tomato	1
+SelakuiP	RishikeshDC	Capsicum	1
+SelakuiP	RishikeshDC	BellPepper	1
+SelakuiP	RishikeshDC	Cucumber	1
+SelakuiP	RishikeshDC	GreenChilli	1
+SelakuiP	ChampawatDC	Tomato	0
+SelakuiP	ChampawatDC	Capsicum	0
+SelakuiP	ChampawatDC	BellPepper	0
+SelakuiP	ChampawatDC	Cucumber	0
+SelakuiP	ChampawatDC	GreenChilli	0
+SelakuiP	HaldwaniDC	Tomato	1
+SelakuiP	HaldwaniDC	Capsicum	1
+SelakuiP	HaldwaniDC	BellPepper	1
+SelakuiP	HaldwaniDC	Cucumber	1
+SelakuiP	HaldwaniDC	GreenChilli	1
+SelakuiP	DehradunDC	Tomato	1
+SelakuiP	DehradunDC	Capsicum	1
+SelakuiP	DehradunDC	BellPepper	1
+SelakuiP	DehradunDC	Cucumber	1
+SelakuiP	DehradunDC	GreenChilli	1
+SelakuiP	SitarganjDC	Tomato	1
+SelakuiP	SitarganjDC	Capsicum	1
+SelakuiP	SitarganjDC	BellPepper	1
+SelakuiP	SitarganjDC	Cucumber	1
+SelakuiP	SitarganjDC	GreenChilli	1
+SelakuiP	KichhaDC	Tomato	1
+SelakuiP	KichhaDC	Capsicum	1
+SelakuiP	KichhaDC	BellPepper	1
+SelakuiP	KichhaDC	Cucumber	1
+SelakuiP	KichhaDC	GreenChilli	1
+SelakuiP	RudrapurDC	Tomato	1
+SelakuiP	RudrapurDC	Capsicum	1
+SelakuiP	RudrapurDC	BellPepper	1
+SelakuiP	RudrapurDC	Cucumber	1
+SelakuiP	RudrapurDC	GreenChilli	1
+SelakuiP	BareillyDC	Tomato	1
+SelakuiP	BareillyDC	Capsicum	1
+SelakuiP	BareillyDC	BellPepper	1
+SelakuiP	BareillyDC	Cucumber	1
+SelakuiP	BareillyDC	GreenChilli	1
+SelakuiP	SelakuiDC	Tomato	1
+SelakuiP	SelakuiDC	Capsicum	1
+SelakuiP	SelakuiDC	BellPepper	1
+SelakuiP	SelakuiDC	Cucumber	1
+SelakuiP	SelakuiDC	GreenChilli	1
+SelakuiP	RoorkeeDC	Tomato	1
+SelakuiP	RoorkeeDC	Capsicum	1
+SelakuiP	RoorkeeDC	BellPepper	1
+SelakuiP	RoorkeeDC	Cucumber	1
+SelakuiP	RoorkeeDC	GreenChilli	1
+SelakuiP	SrinagarDC	Tomato	1
+SelakuiP	SrinagarDC	Capsicum	1
+SelakuiP	SrinagarDC	BellPepper	1
+SelakuiP	SrinagarDC	Cucumber	1
+SelakuiP	SrinagarDC	GreenChilli	1
+SelakuiP	KotdwarDC 	Tomato	1
+SelakuiP	KotdwarDC 	Capsicum	1
+SelakuiP	KotdwarDC 	BellPepper	1
+SelakuiP	KotdwarDC 	Cucumber	1
+SelakuiP	KotdwarDC 	GreenChilli	1
+SelakuiP	HaridwarDC	Tomato	1
+SelakuiP	HaridwarDC	Capsicum	1
+SelakuiP	HaridwarDC	BellPepper	1
+SelakuiP	HaridwarDC	Cucumber	1
+SelakuiP	HaridwarDC	GreenChilli	1
+SelakuiP	PithoragarhDC	Tomato	0
+SelakuiP	PithoragarhDC	Capsicum	0
+SelakuiP	PithoragarhDC	BellPepper	0
+SelakuiP	PithoragarhDC	Cucumber	0
+SelakuiP	PithoragarhDC	GreenChilli	0
+SelakuiP	PilibhitDC	Tomato	1
+SelakuiP	PilibhitDC	Capsicum	1
+SelakuiP	PilibhitDC	BellPepper	1
+SelakuiP	PilibhitDC	Cucumber	1
+SelakuiP	PilibhitDC	GreenChilli	1
+SelakuiP	DelhiDC	Tomato	1
+SelakuiP	DelhiDC	Capsicum	1
+SelakuiP	DelhiDC	BellPepper	1
+SelakuiP	DelhiDC	Cucumber	1
+SelakuiP	DelhiDC	GreenChilli	1
+RoorkeeP	KhatimaDC	Tomato	1
+RoorkeeP	KhatimaDC	Capsicum	1
+RoorkeeP	KhatimaDC	BellPepper	1
+RoorkeeP	KhatimaDC	Cucumber	1
+RoorkeeP	KhatimaDC	GreenChilli	1
+RoorkeeP	RishikeshDC	Tomato	1
+RoorkeeP	RishikeshDC	Capsicum	1
+RoorkeeP	RishikeshDC	BellPepper	1
+RoorkeeP	RishikeshDC	Cucumber	1
+RoorkeeP	RishikeshDC	GreenChilli	1
+RoorkeeP	ChampawatDC	Tomato	1
+RoorkeeP	ChampawatDC	Capsicum	1
+RoorkeeP	ChampawatDC	BellPepper	1
+RoorkeeP	ChampawatDC	Cucumber	1
+RoorkeeP	ChampawatDC	GreenChilli	1
+RoorkeeP	HaldwaniDC	Tomato	1
+RoorkeeP	HaldwaniDC	Capsicum	1
+RoorkeeP	HaldwaniDC	BellPepper	1
+RoorkeeP	HaldwaniDC	Cucumber	1
+RoorkeeP	HaldwaniDC	GreenChilli	1
+RoorkeeP	DehradunDC	Tomato	1
+RoorkeeP	DehradunDC	Capsicum	1
+RoorkeeP	DehradunDC	BellPepper	1
+RoorkeeP	DehradunDC	Cucumber	1
+RoorkeeP	DehradunDC	GreenChilli	1
+RoorkeeP	SitarganjDC	Tomato	1
+RoorkeeP	SitarganjDC	Capsicum	1
+RoorkeeP	SitarganjDC	BellPepper	1
+RoorkeeP	SitarganjDC	Cucumber	1
+RoorkeeP	SitarganjDC	GreenChilli	1
+RoorkeeP	KichhaDC	Tomato	1
+RoorkeeP	KichhaDC	Capsicum	1
+RoorkeeP	KichhaDC	BellPepper	1
+RoorkeeP	KichhaDC	Cucumber	1
+RoorkeeP	KichhaDC	GreenChilli	1
+RoorkeeP	RudrapurDC	Tomato	1
+RoorkeeP	RudrapurDC	Capsicum	1
+RoorkeeP	RudrapurDC	BellPepper	1
+RoorkeeP	RudrapurDC	Cucumber	1
+RoorkeeP	RudrapurDC	GreenChilli	1
+RoorkeeP	BareillyDC	Tomato	1
+RoorkeeP	BareillyDC	Capsicum	1
+RoorkeeP	BareillyDC	BellPepper	1
+RoorkeeP	BareillyDC	Cucumber	1
+RoorkeeP	BareillyDC	GreenChilli	1
+RoorkeeP	SelakuiDC	Tomato	1
+RoorkeeP	SelakuiDC	Capsicum	1
+RoorkeeP	SelakuiDC	BellPepper	1
+RoorkeeP	SelakuiDC	Cucumber	1
+RoorkeeP	SelakuiDC	GreenChilli	1
+RoorkeeP	RoorkeeDC	Tomato	1
+RoorkeeP	RoorkeeDC	Capsicum	1
+RoorkeeP	RoorkeeDC	BellPepper	1
+RoorkeeP	RoorkeeDC	Cucumber	1
+RoorkeeP	RoorkeeDC	GreenChilli	1
+RoorkeeP	SrinagarDC	Tomato	1
+RoorkeeP	SrinagarDC	Capsicum	1
+RoorkeeP	SrinagarDC	BellPepper	1
+RoorkeeP	SrinagarDC	Cucumber	1
+RoorkeeP	SrinagarDC	GreenChilli	1
+RoorkeeP	KotdwarDC 	Tomato	1
+RoorkeeP	KotdwarDC 	Capsicum	1
+RoorkeeP	KotdwarDC 	BellPepper	1
+RoorkeeP	KotdwarDC 	Cucumber	1
+RoorkeeP	KotdwarDC 	GreenChilli	1
+RoorkeeP	HaridwarDC	Tomato	1
+RoorkeeP	HaridwarDC	Capsicum	1
+RoorkeeP	HaridwarDC	BellPepper	1
+RoorkeeP	HaridwarDC	Cucumber	1
+RoorkeeP	HaridwarDC	GreenChilli	1
+RoorkeeP	PithoragarhDC	Tomato	0
+RoorkeeP	PithoragarhDC	Capsicum	0
+RoorkeeP	PithoragarhDC	BellPepper	0
+RoorkeeP	PithoragarhDC	Cucumber	0
+RoorkeeP	PithoragarhDC	GreenChilli	0
+RoorkeeP	PilibhitDC	Tomato	1
+RoorkeeP	PilibhitDC	Capsicum	1
+RoorkeeP	PilibhitDC	BellPepper	1
+RoorkeeP	PilibhitDC	Cucumber	1
+RoorkeeP	PilibhitDC	GreenChilli	1
+RoorkeeP	DelhiDC	Tomato	1
+RoorkeeP	DelhiDC	Capsicum	1
+RoorkeeP	DelhiDC	BellPepper	1
+RoorkeeP	DelhiDC	Cucumber	1
+RoorkeeP	DelhiDC	GreenChilli	1
+SrinagarP	KhatimaDC	Tomato	0
+SrinagarP	KhatimaDC	Capsicum	0
+SrinagarP	KhatimaDC	BellPepper	0
+SrinagarP	KhatimaDC	Cucumber	0
+SrinagarP	KhatimaDC	GreenChilli	0
+SrinagarP	RishikeshDC	Tomato	1
+SrinagarP	RishikeshDC	Capsicum	1
+SrinagarP	RishikeshDC	BellPepper	1
+SrinagarP	RishikeshDC	Cucumber	1
+SrinagarP	RishikeshDC	GreenChilli	1
+SrinagarP	ChampawatDC	Tomato	0
+SrinagarP	ChampawatDC	Capsicum	0
+SrinagarP	ChampawatDC	BellPepper	0
+SrinagarP	ChampawatDC	Cucumber	0
+SrinagarP	ChampawatDC	GreenChilli	0
+SrinagarP	HaldwaniDC	Tomato	1
+SrinagarP	HaldwaniDC	Capsicum	1
+SrinagarP	HaldwaniDC	BellPepper	1
+SrinagarP	HaldwaniDC	Cucumber	1
+SrinagarP	HaldwaniDC	GreenChilli	1
+SrinagarP	DehradunDC	Tomato	1
+SrinagarP	DehradunDC	Capsicum	1
+SrinagarP	DehradunDC	BellPepper	1
+SrinagarP	DehradunDC	Cucumber	1
+SrinagarP	DehradunDC	GreenChilli	1
+SrinagarP	SitarganjDC	Tomato	1
+SrinagarP	SitarganjDC	Capsicum	1
+SrinagarP	SitarganjDC	BellPepper	1
+SrinagarP	SitarganjDC	Cucumber	1
+SrinagarP	SitarganjDC	GreenChilli	1
+SrinagarP	KichhaDC	Tomato	1
+SrinagarP	KichhaDC	Capsicum	1
+SrinagarP	KichhaDC	BellPepper	1
+SrinagarP	KichhaDC	Cucumber	1
+SrinagarP	KichhaDC	GreenChilli	1
+SrinagarP	RudrapurDC	Tomato	1
+SrinagarP	RudrapurDC	Capsicum	1
+SrinagarP	RudrapurDC	BellPepper	1
+SrinagarP	RudrapurDC	Cucumber	1
+SrinagarP	RudrapurDC	GreenChilli	1
+SrinagarP	BareillyDC	Tomato	1
+SrinagarP	BareillyDC	Capsicum	1
+SrinagarP	BareillyDC	BellPepper	1
+SrinagarP	BareillyDC	Cucumber	1
+SrinagarP	BareillyDC	GreenChilli	1
+SrinagarP	SelakuiDC	Tomato	1
+SrinagarP	SelakuiDC	Capsicum	1
+SrinagarP	SelakuiDC	BellPepper	1
+SrinagarP	SelakuiDC	Cucumber	1
+SrinagarP	SelakuiDC	GreenChilli	1
+SrinagarP	RoorkeeDC	Tomato	1
+SrinagarP	RoorkeeDC	Capsicum	1
+SrinagarP	RoorkeeDC	BellPepper	1
+SrinagarP	RoorkeeDC	Cucumber	1
+SrinagarP	RoorkeeDC	GreenChilli	1
+SrinagarP	SrinagarDC	Tomato	1
+SrinagarP	SrinagarDC	Capsicum	1
+SrinagarP	SrinagarDC	BellPepper	1
+SrinagarP	SrinagarDC	Cucumber	1
+SrinagarP	SrinagarDC	GreenChilli	1
+SrinagarP	KotdwarDC 	Tomato	1
+SrinagarP	KotdwarDC 	Capsicum	1
+SrinagarP	KotdwarDC 	BellPepper	1
+SrinagarP	KotdwarDC 	Cucumber	1
+SrinagarP	KotdwarDC 	GreenChilli	1
+SrinagarP	HaridwarDC	Tomato	1
+SrinagarP	HaridwarDC	Capsicum	1
+SrinagarP	HaridwarDC	BellPepper	1
+SrinagarP	HaridwarDC	Cucumber	1
+SrinagarP	HaridwarDC	GreenChilli	1
+SrinagarP	PithoragarhDC	Tomato	1
+SrinagarP	PithoragarhDC	Capsicum	1
+SrinagarP	PithoragarhDC	BellPepper	1
+SrinagarP	PithoragarhDC	Cucumber	1
+SrinagarP	PithoragarhDC	GreenChilli	1
+SrinagarP	PilibhitDC	Tomato	0
+SrinagarP	PilibhitDC	Capsicum	0
+SrinagarP	PilibhitDC	BellPepper	0
+SrinagarP	PilibhitDC	Cucumber	0
+SrinagarP	PilibhitDC	GreenChilli	0
+SrinagarP	DelhiDC	Tomato	1
+SrinagarP	DelhiDC	Capsicum	1
+SrinagarP	DelhiDC	BellPepper	1
+SrinagarP	DelhiDC	Cucumber	1
+SrinagarP	DelhiDC	GreenChilli	1
+KotdwarP	KhatimaDC	Tomato	1
+KotdwarP	KhatimaDC	Capsicum	1
+KotdwarP	KhatimaDC	BellPepper	1
+KotdwarP	KhatimaDC	Cucumber	1
+KotdwarP	KhatimaDC	GreenChilli	1
+KotdwarP	RishikeshDC	Tomato	1
+KotdwarP	RishikeshDC	Capsicum	1
+KotdwarP	RishikeshDC	BellPepper	1
+KotdwarP	RishikeshDC	Cucumber	1
+KotdwarP	RishikeshDC	GreenChilli	1
+KotdwarP	ChampawatDC	Tomato	1
+KotdwarP	ChampawatDC	Capsicum	1
+KotdwarP	ChampawatDC	BellPepper	1
+KotdwarP	ChampawatDC	Cucumber	1
+KotdwarP	ChampawatDC	GreenChilli	1
+KotdwarP	HaldwaniDC	Tomato	1
+KotdwarP	HaldwaniDC	Capsicum	1
+KotdwarP	HaldwaniDC	BellPepper	1
+KotdwarP	HaldwaniDC	Cucumber	1
+KotdwarP	HaldwaniDC	GreenChilli	1
+KotdwarP	DehradunDC	Tomato	1
+KotdwarP	DehradunDC	Capsicum	1
+KotdwarP	DehradunDC	BellPepper	1
+KotdwarP	DehradunDC	Cucumber	1
+KotdwarP	DehradunDC	GreenChilli	1
+KotdwarP	SitarganjDC	Tomato	1
+KotdwarP	SitarganjDC	Capsicum	1
+KotdwarP	SitarganjDC	BellPepper	1
+KotdwarP	SitarganjDC	Cucumber	1
+KotdwarP	SitarganjDC	GreenChilli	1
+KotdwarP	KichhaDC	Tomato	1
+KotdwarP	KichhaDC	Capsicum	1
+KotdwarP	KichhaDC	BellPepper	1
+KotdwarP	KichhaDC	Cucumber	1
+KotdwarP	KichhaDC	GreenChilli	1
+KotdwarP	RudrapurDC	Tomato	1
+KotdwarP	RudrapurDC	Capsicum	1
+KotdwarP	RudrapurDC	BellPepper	1
+KotdwarP	RudrapurDC	Cucumber	1
+KotdwarP	RudrapurDC	GreenChilli	1
+KotdwarP	BareillyDC	Tomato	1
+KotdwarP	BareillyDC	Capsicum	1
+KotdwarP	BareillyDC	BellPepper	1
+KotdwarP	BareillyDC	Cucumber	1
+KotdwarP	BareillyDC	GreenChilli	1
+KotdwarP	SelakuiDC	Tomato	1
+KotdwarP	SelakuiDC	Capsicum	1
+KotdwarP	SelakuiDC	BellPepper	1
+KotdwarP	SelakuiDC	Cucumber	1
+KotdwarP	SelakuiDC	GreenChilli	1
+KotdwarP	RoorkeeDC	Tomato	1
+KotdwarP	RoorkeeDC	Capsicum	1
+KotdwarP	RoorkeeDC	BellPepper	1
+KotdwarP	RoorkeeDC	Cucumber	1
+KotdwarP	RoorkeeDC	GreenChilli	1
+KotdwarP	SrinagarDC	Tomato	1
+KotdwarP	SrinagarDC	Capsicum	1
+KotdwarP	SrinagarDC	BellPepper	1
+KotdwarP	SrinagarDC	Cucumber	1
+KotdwarP	SrinagarDC	GreenChilli	1
+KotdwarP	KotdwarDC 	Tomato	1
+KotdwarP	KotdwarDC 	Capsicum	1
+KotdwarP	KotdwarDC 	BellPepper	1
+KotdwarP	KotdwarDC 	Cucumber	1
+KotdwarP	KotdwarDC 	GreenChilli	1
+KotdwarP	HaridwarDC	Tomato	1
+KotdwarP	HaridwarDC	Capsicum	1
+KotdwarP	HaridwarDC	BellPepper	1
+KotdwarP	HaridwarDC	Cucumber	1
+KotdwarP	HaridwarDC	GreenChilli	1
+KotdwarP	PithoragarhDC	Tomato	0
+KotdwarP	PithoragarhDC	Capsicum	0
+KotdwarP	PithoragarhDC	BellPepper	0
+KotdwarP	PithoragarhDC	Cucumber	0
+KotdwarP	PithoragarhDC	GreenChilli	0
+KotdwarP	PilibhitDC	Tomato	1
+KotdwarP	PilibhitDC	Capsicum	1
+KotdwarP	PilibhitDC	BellPepper	1
+KotdwarP	PilibhitDC	Cucumber	1
+KotdwarP	PilibhitDC	GreenChilli	1
+KotdwarP	DelhiDC	Tomato	1
+KotdwarP	DelhiDC	Capsicum	1
+KotdwarP	DelhiDC	BellPepper	1
+KotdwarP	DelhiDC	Cucumber	1
+KotdwarP	DelhiDC	GreenChilli	1
+HaridwarP	KhatimaDC	Tomato	1
+HaridwarP	KhatimaDC	Capsicum	1
+HaridwarP	KhatimaDC	BellPepper	1
+HaridwarP	KhatimaDC	Cucumber	1
+HaridwarP	KhatimaDC	GreenChilli	1
+HaridwarP	RishikeshDC	Tomato	1
+HaridwarP	RishikeshDC	Capsicum	1
+HaridwarP	RishikeshDC	BellPepper	1
+HaridwarP	RishikeshDC	Cucumber	1
+HaridwarP	RishikeshDC	GreenChilli	1
+HaridwarP	ChampawatDC	Tomato	1
+HaridwarP	ChampawatDC	Capsicum	1
+HaridwarP	ChampawatDC	BellPepper	1
+HaridwarP	ChampawatDC	Cucumber	1
+HaridwarP	ChampawatDC	GreenChilli	1
+HaridwarP	HaldwaniDC	Tomato	1
+HaridwarP	HaldwaniDC	Capsicum	1
+HaridwarP	HaldwaniDC	BellPepper	1
+HaridwarP	HaldwaniDC	Cucumber	1
+HaridwarP	HaldwaniDC	GreenChilli	1
+HaridwarP	DehradunDC	Tomato	1
+HaridwarP	DehradunDC	Capsicum	1
+HaridwarP	DehradunDC	BellPepper	1
+HaridwarP	DehradunDC	Cucumber	1
+HaridwarP	DehradunDC	GreenChilli	1
+HaridwarP	SitarganjDC	Tomato	1
+HaridwarP	SitarganjDC	Capsicum	1
+HaridwarP	SitarganjDC	BellPepper	1
+HaridwarP	SitarganjDC	Cucumber	1
+HaridwarP	SitarganjDC	GreenChilli	1
+HaridwarP	KichhaDC	Tomato	1
+HaridwarP	KichhaDC	Capsicum	1
+HaridwarP	KichhaDC	BellPepper	1
+HaridwarP	KichhaDC	Cucumber	1
+HaridwarP	KichhaDC	GreenChilli	1
+HaridwarP	RudrapurDC	Tomato	1
+HaridwarP	RudrapurDC	Capsicum	1
+HaridwarP	RudrapurDC	BellPepper	1
+HaridwarP	RudrapurDC	Cucumber	1
+HaridwarP	RudrapurDC	GreenChilli	1
+HaridwarP	BareillyDC	Tomato	1
+HaridwarP	BareillyDC	Capsicum	1
+HaridwarP	BareillyDC	BellPepper	1
+HaridwarP	BareillyDC	Cucumber	1
+HaridwarP	BareillyDC	GreenChilli	1
+HaridwarP	SelakuiDC	Tomato	1
+HaridwarP	SelakuiDC	Capsicum	1
+HaridwarP	SelakuiDC	BellPepper	1
+HaridwarP	SelakuiDC	Cucumber	1
+HaridwarP	SelakuiDC	GreenChilli	1
+HaridwarP	RoorkeeDC	Tomato	1
+HaridwarP	RoorkeeDC	Capsicum	1
+HaridwarP	RoorkeeDC	BellPepper	1
+HaridwarP	RoorkeeDC	Cucumber	1
+HaridwarP	RoorkeeDC	GreenChilli	1
+HaridwarP	SrinagarDC	Tomato	1
+HaridwarP	SrinagarDC	Capsicum	1
+HaridwarP	SrinagarDC	BellPepper	1
+HaridwarP	SrinagarDC	Cucumber	1
+HaridwarP	SrinagarDC	GreenChilli	1
+HaridwarP	KotdwarDC 	Tomato	1
+HaridwarP	KotdwarDC 	Capsicum	1
+HaridwarP	KotdwarDC 	BellPepper	1
+HaridwarP	KotdwarDC 	Cucumber	1
+HaridwarP	KotdwarDC 	GreenChilli	1
+HaridwarP	HaridwarDC	Tomato	1
+HaridwarP	HaridwarDC	Capsicum	1
+HaridwarP	HaridwarDC	BellPepper	1
+HaridwarP	HaridwarDC	Cucumber	1
+HaridwarP	HaridwarDC	GreenChilli	1
+HaridwarP	PithoragarhDC	Tomato	0
+HaridwarP	PithoragarhDC	Capsicum	0
+HaridwarP	PithoragarhDC	BellPepper	0
+HaridwarP	PithoragarhDC	Cucumber	0
+HaridwarP	PithoragarhDC	GreenChilli	0
+HaridwarP	PilibhitDC	Tomato	1
+HaridwarP	PilibhitDC	Capsicum	1
+HaridwarP	PilibhitDC	BellPepper	1
+HaridwarP	PilibhitDC	Cucumber	1
+HaridwarP	PilibhitDC	GreenChilli	1
+HaridwarP	DelhiDC	Tomato	1
+HaridwarP	DelhiDC	Capsicum	1
+HaridwarP	DelhiDC	BellPepper	1
+HaridwarP	DelhiDC	Cucumber	1
+HaridwarP	DelhiDC	GreenChilli	1
+PithoragarhP	KhatimaDC	Tomato	1
+PithoragarhP	KhatimaDC	Capsicum	1
+PithoragarhP	KhatimaDC	BellPepper	1
+PithoragarhP	KhatimaDC	Cucumber	1
+PithoragarhP	KhatimaDC	GreenChilli	1
+PithoragarhP	RishikeshDC	Tomato	0
+PithoragarhP	RishikeshDC	Capsicum	0
+PithoragarhP	RishikeshDC	BellPepper	0
+PithoragarhP	RishikeshDC	Cucumber	0
+PithoragarhP	RishikeshDC	GreenChilli	0
+PithoragarhP	ChampawatDC	Tomato	1
+PithoragarhP	ChampawatDC	Capsicum	1
+PithoragarhP	ChampawatDC	BellPepper	1
+PithoragarhP	ChampawatDC	Cucumber	1
+PithoragarhP	ChampawatDC	GreenChilli	1
+PithoragarhP	HaldwaniDC	Tomato	1
+PithoragarhP	HaldwaniDC	Capsicum	1
+PithoragarhP	HaldwaniDC	BellPepper	1
+PithoragarhP	HaldwaniDC	Cucumber	1
+PithoragarhP	HaldwaniDC	GreenChilli	1
+PithoragarhP	DehradunDC	Tomato	0
+PithoragarhP	DehradunDC	Capsicum	0
+PithoragarhP	DehradunDC	BellPepper	0
+PithoragarhP	DehradunDC	Cucumber	0
+PithoragarhP	DehradunDC	GreenChilli	0
+PithoragarhP	SitarganjDC	Tomato	1
+PithoragarhP	SitarganjDC	Capsicum	1
+PithoragarhP	SitarganjDC	BellPepper	1
+PithoragarhP	SitarganjDC	Cucumber	1
+PithoragarhP	SitarganjDC	GreenChilli	1
+PithoragarhP	KichhaDC	Tomato	1
+PithoragarhP	KichhaDC	Capsicum	1
+PithoragarhP	KichhaDC	BellPepper	1
+PithoragarhP	KichhaDC	Cucumber	1
+PithoragarhP	KichhaDC	GreenChilli	1
+PithoragarhP	RudrapurDC	Tomato	1
+PithoragarhP	RudrapurDC	Capsicum	1
+PithoragarhP	RudrapurDC	BellPepper	1
+PithoragarhP	RudrapurDC	Cucumber	1
+PithoragarhP	RudrapurDC	GreenChilli	1
+PithoragarhP	BareillyDC	Tomato	1
+PithoragarhP	BareillyDC	Capsicum	1
+PithoragarhP	BareillyDC	BellPepper	1
+PithoragarhP	BareillyDC	Cucumber	1
+PithoragarhP	BareillyDC	GreenChilli	1
+PithoragarhP	SelakuiDC	Tomato	0
+PithoragarhP	SelakuiDC	Capsicum	0
+PithoragarhP	SelakuiDC	BellPepper	0
+PithoragarhP	SelakuiDC	Cucumber	0
+PithoragarhP	SelakuiDC	GreenChilli	0
+PithoragarhP	RoorkeeDC	Tomato	0
+PithoragarhP	RoorkeeDC	Capsicum	0
+PithoragarhP	RoorkeeDC	BellPepper	0
+PithoragarhP	RoorkeeDC	Cucumber	0
+PithoragarhP	RoorkeeDC	GreenChilli	0
+PithoragarhP	SrinagarDC	Tomato	1
+PithoragarhP	SrinagarDC	Capsicum	1
+PithoragarhP	SrinagarDC	BellPepper	1
+PithoragarhP	SrinagarDC	Cucumber	1
+PithoragarhP	SrinagarDC	GreenChilli	1
+PithoragarhP	KotdwarDC 	Tomato	0
+PithoragarhP	KotdwarDC 	Capsicum	0
+PithoragarhP	KotdwarDC 	BellPepper	0
+PithoragarhP	KotdwarDC 	Cucumber	0
+PithoragarhP	KotdwarDC 	GreenChilli	0
+PithoragarhP	HaridwarDC	Tomato	0
+PithoragarhP	HaridwarDC	Capsicum	0
+PithoragarhP	HaridwarDC	BellPepper	0
+PithoragarhP	HaridwarDC	Cucumber	0
+PithoragarhP	HaridwarDC	GreenChilli	0
+PithoragarhP	PithoragarhDC	Tomato	1
+PithoragarhP	PithoragarhDC	Capsicum	1
+PithoragarhP	PithoragarhDC	BellPepper	1
+PithoragarhP	PithoragarhDC	Cucumber	1
+PithoragarhP	PithoragarhDC	GreenChilli	1
+PithoragarhP	PilibhitDC	Tomato	1
+PithoragarhP	PilibhitDC	Capsicum	1
+PithoragarhP	PilibhitDC	BellPepper	1
+PithoragarhP	PilibhitDC	Cucumber	1
+PithoragarhP	PilibhitDC	GreenChilli	1
+PithoragarhP	DelhiDC	Tomato	0
+PithoragarhP	DelhiDC	Capsicum	0
+PithoragarhP	DelhiDC	BellPepper	0
+PithoragarhP	DelhiDC	Cucumber	0
+PithoragarhP	DelhiDC	GreenChilli	0
+
+
+;
+
+param C_ip :=
+KhatimaP	Tomato	1.96
+KhatimaP	Capsicum	1.176
+KhatimaP	BellPepper	3.92
+KhatimaP	Cucumber	3.92
+KhatimaP	GreenChilli	1.96
+ThanoP	Tomato	2.613333333
+ThanoP	Capsicum	1.568
+ThanoP	BellPepper	5.226666667
+ThanoP	Cucumber	5.226666667
+ThanoP	GreenChilli	2.613333333
+BanbasaP	Tomato	1.96
+BanbasaP	Capsicum	1.176
+BanbasaP	BellPepper	3.92
+BanbasaP	Cucumber	3.92
+BanbasaP	GreenChilli	1.96
+HaldwaniP	Tomato	2.613333333
+HaldwaniP	Capsicum	1.568
+HaldwaniP	BellPepper	5.226666667
+HaldwaniP	Cucumber	5.226666667
+HaldwaniP	GreenChilli	2.613333333
+RanipokhariP	Tomato	2.613333333
+RanipokhariP	Capsicum	1.568
+RanipokhariP	BellPepper	5.226666667
+RanipokhariP	Cucumber	5.226666667
+RanipokhariP	GreenChilli	2.613333333
+SitarganjP	Tomato	1.96
+SitarganjP	Capsicum	1.176
+SitarganjP	BellPepper	3.92
+SitarganjP	Cucumber	3.92
+SitarganjP	GreenChilli	1.96
+KichhaP	Tomato	1.96
+KichhaP	Capsicum	1.176
+KichhaP	BellPepper	3.92
+KichhaP	Cucumber	3.92
+KichhaP	GreenChilli	1.96
+RudrapurP	Tomato	2.613333333
+RudrapurP	Capsicum	1.568
+RudrapurP	BellPepper	5.226666667
+RudrapurP	Cucumber	5.226666667
+RudrapurP	GreenChilli	2.613333333
+DoiwalaP	Tomato	2.613333333
+DoiwalaP	Capsicum	1.568
+DoiwalaP	BellPepper	5.226666667
+DoiwalaP	Cucumber	5.226666667
+DoiwalaP	GreenChilli	2.613333333
+SelakuiP	Tomato	2.613333333
+SelakuiP	Capsicum	1.568
+SelakuiP	BellPepper	5.226666667
+SelakuiP	Cucumber	5.226666667
+SelakuiP	GreenChilli	2.613333333
+RoorkeeP	Tomato	1.96
+RoorkeeP	Capsicum	1.176
+RoorkeeP	BellPepper	3.92
+RoorkeeP	Cucumber	3.92
+RoorkeeP	GreenChilli	1.96
+SrinagarP	Tomato	3.173333333
+SrinagarP	Capsicum	1.904
+SrinagarP	BellPepper	6.346666667
+SrinagarP	Cucumber	6.346666667
+SrinagarP	GreenChilli	3.173333333
+KotdwarP	Tomato	1.96
+KotdwarP	Capsicum	1.176
+KotdwarP	BellPepper	3.92
+KotdwarP	Cucumber	3.92
+KotdwarP	GreenChilli	1.96
+HaridwarP	Tomato	2.613333333
+HaridwarP	Capsicum	1.568
+HaridwarP	BellPepper	5.226666667
+HaridwarP	Cucumber	5.226666667
+HaridwarP	GreenChilli	2.613333333
+PithoragarhP	Tomato	3.173333333
+PithoragarhP	Capsicum	1.904
+PithoragarhP	BellPepper	6.346666667
+PithoragarhP	Cucumber	6.346666667
+PithoragarhP	GreenChilli	3.173333333
+
+;
