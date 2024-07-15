@@ -1,0 +1,296 @@
+set I:=	KhatimaP	ThanoP	BanbasaP	HaldwaniP	RanipokhariP	SitarganjP	KichhaP	RudrapurP	DoiwalaP	SelakuiP	RoorkeeP	SrinagarP	KotdwarP	HaridwarP	PithoragarhP;
+
+set J:=	KhatimaDC	RishikeshDC	ChampawatDC	HaldwaniDC	DehradunDC	SitarganjDC	KichhaDC	RudrapurDC	BareillyDC	SelakuiDC	RoorkeeDC	SrinagarDC	KotdwarDC 	HaridwarDC	PithoragarhDC	PilibhitDC	DelhiDC;
+
+set P:=	Tomato	Capsicum	BellPepper	Cucumber	GreenChilli;
+
+set IK:=																	
+	(*,1)	KhatimaP	ThanoP	BanbasaP	HaldwaniP	RanipokhariP	SitarganjP	KichhaP	RudrapurP	DoiwalaP	SelakuiP	RoorkeeP	SrinagarP	KotdwarP	HaridwarP	PithoragarhP	
+	(*,2)	KhatimaP	ThanoP	BanbasaP	HaldwaniP	RanipokhariP	SitarganjP	KichhaP	RudrapurP	DoiwalaP	SelakuiP	RoorkeeP	SrinagarP	KotdwarP	HaridwarP	PithoragarhP	
+	(*,3)	KhatimaP	ThanoP	BanbasaP	HaldwaniP	RanipokhariP	SitarganjP	KichhaP	RudrapurP	DoiwalaP	SelakuiP	RoorkeeP	SrinagarP	KotdwarP	HaridwarP	PithoragarhP;
+
+param K := 
+	KhatimaP 3
+	ThanoP 3
+	BanbasaP 3
+	HaldwaniP 3
+	RanipokhariP 3
+	SitarganjP 3
+	KichhaP 3
+	RudrapurP 3
+	DoiwalaP 3
+	SelakuiP 3
+	RoorkeeP 3
+	SrinagarP 3
+	KotdwarP 3
+	HaridwarP 3
+	PithoragarhP 3
+	;
+
+param C_ikj:=																			
+	[*,1,*]:	KhatimaDC	RishikeshDC	ChampawatDC	HaldwaniDC	DehradunDC	SitarganjDC	KichhaDC	RudrapurDC	BareillyDC	SelakuiDC	RoorkeeDC	SrinagarDC	KotdwarDC 	HaridwarDC	PithoragarhDC	PilibhitDC	DelhiDC	:=
+	KhatimaP	0.375	7.5	3	2	8.25	0.75	1.375	1.75	2.5	8.75	7.75	10.25	6.375	7	5	1.25	8.25	
+	ThanoP	7.875	0.75	10.25	6.625	0.75	7.25	6.5	6.25	7.75	1.25	1.875	3.75	2.75	1.25	12.25	8.25	7.125	
+	BanbasaP	0.75	8.25	2.5	2.5	8.625	1.125	1.75	2.125	2.5	9.125	8.125	10.625	6.75	7.375	4.5	1.625	8.625	
+	HaldwaniP	2	6.25	4.375	0.375	7	1.25	1	0.875	2.5	7.5	6.125	9	5.125	5.75	6.125	2.375	7.5	
+	RanipokhariP	8	0.5	10.25	6.625	0.75	7.125	6.5	6.25	7.5	1.25	1.75	3	2.625	1	12	8.125	7	
+	SitarganjP	0.75	6.75	3.75	1.25	7.5	0.25	0.625	1	2.125	8	7	9.5	5.625	6.25	5.75	2	7.625	
+	KichhaP	1.375	7.375	4.375	0.625	6.875	0.625	0.25	0.375	1.625	7.375	6.375	8.875	5	5.625	6.375	2.625	7	
+	RudrapurP	1.75	7	0.475	0.8	6.5	1	0.375	0.25	2	7	6	8.5	4.625	5.25	6.75	3	6.625	
+	DoiwalaP	7.75	0.625	10.125	6.5	0.5	7	6.375	6.125	7.5	1	1.625	3.25	2.5	0.875	11.875	8	6.875	
+	SelakuiP	8.75	1.625	11.125	7.5	0.5	8	7.375	7	8.875	0.25	2.25	4.25	3.5	1.875	12.875	9	6.375	
+	RoorkeeP	7.125	1.3	9.5	5.875	1.75	6.375	5.75	5.5	6.375	4.75	0.25	4	2.5	0.8	11.25	7.375	5.375	
+	SrinagarP	10.5	2.75	10.5	8.75	3.75	9.375	8.75	8.5	9.75	4.25	4	0.25	3.375	3.25	7.5	10.375	8.75	
+	KotdwarP	6.25	2.25	8.75	5.125	3	5.625	5	4.75	6	3.5	2.5	3.375	0.25	1.75	10.5	6.625	5.5	
+	HaridwarP	6.875	0.625	9.25	5.625	1.375	6.125	5.5	5.25	6.625	1.875	0.8	3.25	1.75	0.25	11.125	7.25	6.125	
+	PithoragarhP	5	11.75	2.5	6.125	12.5	5	5.625	6	6.5	13	12	9	10.5	11.25	0.375	5.25	12.5	
+																			
+																			
+	[*,2,*]:	KhatimaDC	RishikeshDC	ChampawatDC	HaldwaniDC	DehradunDC	SitarganjDC	KichhaDC	RudrapurDC	BareillyDC	SelakuiDC	RoorkeeDC	SrinagarDC	KotdwarDC 	HaridwarDC	PithoragarhDC	PilibhitDC	DelhiDC	:=
+	KhatimaP	0.166666667	3.333333333	1.333333333	0.888888889	3.666666667	0.333333333	0.611111111	0.777777778	1.111111111	3.888888889	3.444444444	4.555555556	2.833333333	3.111111111	2.222222222	0.555555556	3.666666667	
+	ThanoP	3.5	0.333333333	4.555555556	2.944444444	0.333333333	3.222222222	2.888888889	2.777777778	3.444444444	0.555555556	0.833333333	1.666666667	1.222222222	0.555555556	5.444444444	3.666666667	3.166666667	
+	BanbasaP	0.333333333	3.666666667	1.111111111	1.111111111	3.833333333	0.5	0.777777778	0.944444444	1.111111111	4.055555556	3.611111111	4.722222222	3	3.277777778	2	0.722222222	3.833333333	
+	HaldwaniP	0.888888889	2.777777778	1.944444444	0.166666667	3.111111111	0.555555556	0.444444444	0.388888889	1.111111111	3.333333333	2.722222222	4	2.277777778	2.555555556	2.722222222	1.055555556	3.333333333	
+	RanipokhariP	3.555555556	0.222222222	4.555555556	2.944444444	0.333333333	3.166666667	2.888888889	2.777777778	3.333333333	0.555555556	0.777777778	1.333333333	1.166666667	0.444444444	5.333333333	3.611111111	3.111111111	
+	SitarganjP	0.333333333	3	1.666666667	0.555555556	3.333333333	0.111111111	0.277777778	0.444444444	0.944444444	3.555555556	3.111111111	4.222222222	2.5	2.777777778	2.555555556	0.888888889	3.388888889	
+	KichhaP	0.611111111	3.277777778	1.944444444	0.277777778	3.055555556	0.277777778	0.111111111	0.166666667	0.722222222	3.277777778	2.833333333	3.944444444	2.222222222	2.5	2.833333333	1.166666667	3.111111111	
+	RudrapurP	0.777777778	3.111111111	0.211111111	0.355555556	2.888888889	0.444444444	0.166666667	0.111111111	0.888888889	3.111111111	2.666666667	3.777777778	2.055555556	2.333333333	3	1.333333333	2.944444444	
+	DoiwalaP	3.444444444	0.277777778	4.5	2.888888889	0.222222222	3.111111111	2.833333333	2.722222222	3.333333333	0.444444444	0.722222222	1.444444444	1.111111111	0.388888889	5.277777778	3.555555556	3.055555556	
+	SelakuiP	3.888888889	0.722222222	4.944444444	3.333333333	0.222222222	3.555555556	3.277777778	3.111111111	3.944444444	0.111111111	1	1.888888889	1.555555556	0.833333333	5.722222222	4	2.833333333	
+	RoorkeeP	3.166666667	0.577777778	4.222222222	2.611111111	0.777777778	2.833333333	2.555555556	2.444444444	2.833333333	2.111111111	0.111111111	1.777777778	1.111111111	0.355555556	5	3.277777778	2.388888889	
+	SrinagarP	4.666666667	1.222222222	4.666666667	3.888888889	1.666666667	4.166666667	3.888888889	3.777777778	4.333333333	1.888888889	1.777777778	0.111111111	1.5	1.444444444	3.333333333	4.611111111	3.888888889	
+	KotdwarP	2.777777778	1	3.888888889	2.277777778	1.333333333	2.5	2.222222222	2.111111111	2.666666667	1.555555556	1.111111111	1.5	0.111111111	0.777777778	4.666666667	2.944444444	2.444444444	
+	HaridwarP	3.055555556	0.277777778	4.111111111	2.5	0.611111111	2.722222222	2.444444444	2.333333333	2.944444444	0.833333333	0.355555556	1.444444444	0.777777778	0.111111111	4.944444444	3.222222222	2.722222222	
+	PithoragarhP	2.222222222	5.222222222	1.111111111	2.722222222	5.555555556	2.222222222	2.5	2.666666667	2.888888889	5.777777778	5.333333333	4	4.666666667	5	0.166666667	2.333333333	5.555555556	
+																			
+																			
+	[*,3,*]:	KhatimaDC	RishikeshDC	ChampawatDC	HaldwaniDC	DehradunDC	SitarganjDC	KichhaDC	RudrapurDC	BareillyDC	SelakuiDC	RoorkeeDC	SrinagarDC	KotdwarDC 	HaridwarDC	PithoragarhDC	PilibhitDC	DelhiDC	:=
+	KhatimaP	0.12	2.4	0.96	0.64	2.64	0.24	0.44	0.56	0.8	2.8	2.48	3.28	2.04	2.24	1.6	0.4	2.64	
+	ThanoP	2.52	0.24	3.28	2.12	0.24	2.32	2.08	2	2.48	0.4	0.6	1.2	0.88	0.4	3.92	2.64	2.28	
+	BanbasaP	0.24	2.64	0.8	0.8	2.76	0.36	0.56	0.68	0.8	2.92	2.6	3.4	2.16	2.36	1.44	0.52	2.76	
+	HaldwaniP	0.64	2	1.4	0.12	2.24	0.4	0.32	0.28	0.8	2.4	1.96	2.88	1.64	1.84	1.96	0.76	2.4	
+	RanipokhariP	2.56	0.16	3.28	2.12	0.24	2.28	2.08	2	2.4	0.4	0.56	0.96	0.84	0.32	3.84	2.6	2.24	
+	SitarganjP	0.24	2.16	1.2	0.4	2.4	0.08	0.2	0.32	0.68	2.56	2.24	3.04	1.8	2	1.84	0.64	2.44	
+	KichhaP	0.44	2.36	1.4	0.2	2.2	0.2	0.08	0.12	0.52	2.36	2.04	2.84	1.6	1.8	2.04	0.84	2.24	
+	RudrapurP	0.56	2.24	0.152	0.256	2.08	0.32	0.12	0.08	0.64	2.24	1.92	2.72	1.48	1.68	2.16	0.96	2.12	
+	DoiwalaP	2.48	0.2	3.24	2.08	0.16	2.24	2.04	1.96	2.4	0.32	0.52	1.04	0.8	0.28	3.8	2.56	2.2	
+	SelakuiP	2.8	0.52	3.56	2.4	0.16	2.56	2.36	2.24	2.84	0.08	0.72	1.36	1.12	0.6	4.12	2.88	2.04	
+	RoorkeeP	2.28	0.416	3.04	1.88	0.56	2.04	1.84	1.76	2.04	1.52	0.08	1.28	0.8	0.256	3.6	2.36	1.72	
+	SrinagarP	3.36	0.88	3.36	2.8	1.2	3	2.8	2.72	3.12	1.36	1.28	0.08	1.08	1.04	2.4	3.32	2.8	
+	KotdwarP	2	0.72	2.8	1.64	0.96	1.8	1.6	1.52	1.92	1.12	0.8	1.08	0.08	0.56	3.36	2.12	1.76	
+	HaridwarP	2.2	0.2	2.96	1.8	0.44	1.96	1.76	1.68	2.12	0.6	0.256	1.04	0.56	0.08	3.56	2.32	1.96	
+	PithoragarhP	1.6	3.76	0.8	1.96	4	1.6	1.8	1.92	2.08	4.16	3.84	2.88	3.36	3.6	0.12	1.68	4
+	;	
+
+
+param F_ik:	1	2	3	:=
+KhatimaP	500	1000	2000	
+ThanoP	500	1000	2000	
+BanbasaP	500	1000	2000	
+HaldwaniP	500	1000	2000	
+RanipokhariP	500	1000	2000	
+SitarganjP	500	1000	2000	
+KichhaP	500	1000	2000	
+RudrapurP	500	1000	2000	
+DoiwalaP	500	1000	2000	
+SelakuiP	500	1000	2000	
+RoorkeeP	500	1000	2000	
+SrinagarP	500	1000	2000	
+KotdwarP	500	1000	2000	
+HaridwarP	500	1000	2000	
+PithoragarhP	500	1000	2000
+;
+
+param X_ik_min:	1	2	3	:=
+KhatimaP	100	1001	2001	
+ThanoP	100	1001	2001	
+BanbasaP	100	1001	2001	
+HaldwaniP	100	1001	2001	
+RanipokhariP	100	1001	2001	
+SitarganjP	100	1001	2001	
+KichhaP	100	1001	2001	
+RudrapurP	100	1001	2001	
+DoiwalaP	100	1001	2001	
+SelakuiP	100	1001	2001	
+RoorkeeP	100	1001	2001	
+SrinagarP	100	1001	2001	
+KotdwarP	100	1001	2001	
+HaridwarP	100	1001	2001	
+PithoragarhP	100	1001	2001
+;
+
+param X_ik_max:	1	2	3	:=
+KhatimaP	1000	2000	6000	
+ThanoP	1000	2000	6000	
+BanbasaP	1000	2000	6000	
+HaldwaniP	1000	2000	6000	
+RanipokhariP	1000	2000	6000	
+SitarganjP	1000	2000	6000	
+KichhaP	1000	2000	6000	
+RudrapurP	1000	2000	6000	
+DoiwalaP	1000	2000	6000	
+SelakuiP	1000	2000	6000	
+RoorkeeP	1000	2000	6000	
+SrinagarP	1000	2000	6000	
+KotdwarP	1000	2000	6000	
+HaridwarP	1000	2000	6000	
+PithoragarhP	1000	2000	6000
+;
+
+
+param D_jp:	Tomato	Capsicum	BellPepper	Cucumber	GreenChilli	:=
+KhatimaDC	1000	100	200	500	50	
+RishikeshDC	1000	100	200	500	50	
+ChampawatDC	1000	100	200	500	50	
+HaldwaniDC	1500	150	250	250	25	
+DehradunDC	4000	400	800	1000	100	
+SitarganjDC	1500	150	350	500	50	
+KichhaDC	250	50	100	200	20	
+RudrapurDC	700	100	200	500	50	
+BareillyDC	4500	450	1000	2000	200	
+SelakuiDC	1000	100	200	500	50	
+RoorkeeDC	1000	100	200	500	50	
+SrinagarDC	6000	2000	400	1000	1000	
+KotdwarDC 	750	100	200	500	50	
+HaridwarDC	20000	2000	3000	5000	1000	
+PithoragarhDC	1000	100	200	600	60	
+PilibhitDC	500	50	100	300	30	
+DelhiDC	20000	2000	4000	8000	1000
+;
+
+
+param X_p:=		
+Tomato	1500	
+Capsicum	750	
+BellPepper	750	
+Cucumber	2500	
+GreenChilli	1500
+;
+
+param Q_i:=		
+KhatimaP	10	
+ThanoP	10	
+BanbasaP	10	
+HaldwaniP	10	
+RanipokhariP	10	
+SitarganjP	10	
+KichhaP	10	
+RudrapurP	10	
+DoiwalaP	10	
+SelakuiP	10	
+RoorkeeP	10	
+SrinagarP	10	
+KotdwarP	10	
+HaridwarP	10	
+PithoragarhP	10
+;
+
+param S_ijp:=																			
+	[*,*,Tomato]:	KhatimaDC	RishikeshDC	ChampawatDC	HaldwaniDC	DehradunDC	SitarganjDC	KichhaDC	RudrapurDC	BareillyDC	SelakuiDC	RoorkeeDC	SrinagarDC	KotdwarDC 	HaridwarDC	PithoragarhDC	PilibhitDC	DelhiDC	:=
+	KhatimaP	1	0	1	1	0	1	1	1	1	0	0	0	0	0	1	1	0	
+	ThanoP	0	1	0	0	1	0	0	1	0	1	1	1	1	1	0	0	0	
+	BanbasaP	1	0	1	1	0	1	1	1	1	0	0	0	0	0	1	1	0	
+	HaldwaniP	1	1	1	1	0	1	1	1	1	0	1	0	1	1	1	1	0	
+	RanipokhariP	0	1	0	0	1	0	0	1	0	1	1	1	1	1	0	0	0	
+	SitarganjP	1	0	1	1	0	1	1	1	1	0	0	0	1	1	1	1	0	
+	KichhaP	1	0	1	1	0	1	1	1	1	0	0	0	1	1	0	1	0	
+	RudrapurP	1	0	1	1	0	1	1	1	1	0	1	0	1	1	0	1	0	
+	DoiwalaP	0	1	0	0	1	0	0	1	0	1	1	1	1	1	0	0	0	
+	SelakuiP	0	1	0	0	1	0	0	0	0	1	1	1	1	1	0	0	0	
+	RoorkeeP	0	1	0	1	1	0	1	1	0	1	1	1	1	1	0	0	1	
+	SrinagarP	0	1	0	0	1	0	0	0	0	1	1	1	1	1	0	0	0	
+	KotdwarP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	1	
+	HaridwarP	0	1	0	1	1	1	1	1	0	1	1	1	1	1	0	0	1	
+	PithoragarhP	1	0	1	1	0	1	1	1	0	0	0	0	0	0	1	1	0	
+																			
+																			
+	[*,*,Capsicum]:	KhatimaDC	RishikeshDC	ChampawatDC	HaldwaniDC	DehradunDC	SitarganjDC	KichhaDC	RudrapurDC	BareillyDC	SelakuiDC	RoorkeeDC	SrinagarDC	KotdwarDC 	HaridwarDC	PithoragarhDC	PilibhitDC	DelhiDC	:=
+	KhatimaP	1	1	1	1	0	1	1	1	1	0	0	0	1	1	1	1	0	
+	ThanoP	0	1	0	1	1	1	1	1	0	1	1	1	1	1	0	0	1	
+	BanbasaP	1	0	1	1	0	1	1	1	1	0	0	0	1	1	1	1	0	
+	HaldwaniP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	RanipokhariP	0	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	1	
+	SitarganjP	1	1	1	1	1	1	1	1	1	0	1	0	1	1	1	1	0	
+	KichhaP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	RudrapurP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	DoiwalaP	0	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	1	
+	SelakuiP	0	1	0	1	1	0	1	1	0	1	1	1	1	1	0	0	1	
+	RoorkeeP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	SrinagarP	0	1	0	0	1	0	0	0	0	1	1	1	1	1	1	0	0	
+	KotdwarP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	HaridwarP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	PithoragarhP	1	0	1	1	0	1	1	1	1	0	0	0	0	0	1	1	0	
+																			
+																			
+	[*,*,BellPepper]:	KhatimaDC	RishikeshDC	ChampawatDC	HaldwaniDC	DehradunDC	SitarganjDC	KichhaDC	RudrapurDC	BareillyDC	SelakuiDC	RoorkeeDC	SrinagarDC	KotdwarDC 	HaridwarDC	PithoragarhDC	PilibhitDC	DelhiDC	:=
+	KhatimaP	1	1	1	1	0	1	1	1	1	0	0	0	1	1	1	1	0	
+	ThanoP	0	1	0	1	1	1	1	1	0	1	1	1	1	1	0	0	1	
+	BanbasaP	1	0	1	1	0	1	1	1	1	0	0	0	1	1	1	1	0	
+	HaldwaniP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	RanipokhariP	0	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	1	
+	SitarganjP	1	1	1	1	1	1	1	1	1	0	1	0	1	1	1	1	0	
+	KichhaP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	RudrapurP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	DoiwalaP	0	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	1	
+	SelakuiP	0	1	0	1	1	0	1	1	0	1	1	1	1	1	0	0	1	
+	RoorkeeP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	SrinagarP	0	1	0	0	1	0	0	0	0	1	1	1	1	1	1	0	0	
+	KotdwarP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	HaridwarP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	PithoragarhP	1	0	1	1	0	1	1	1	1	0	0	0	0	0	1	1	0	
+																			
+																			
+	[*,*,Cucumber]:	KhatimaDC	RishikeshDC	ChampawatDC	HaldwaniDC	DehradunDC	SitarganjDC	KichhaDC	RudrapurDC	BareillyDC	SelakuiDC	RoorkeeDC	SrinagarDC	KotdwarDC 	HaridwarDC	PithoragarhDC	PilibhitDC	DelhiDC	:=
+	KhatimaP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	ThanoP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	BanbasaP	1	1	1	1	1	1	1	1	1	0	1	0	1	1	1	1	1	
+	HaldwaniP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	RanipokhariP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	SitarganjP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	KichhaP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	RudrapurP	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	
+	DoiwalaP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	SelakuiP	1	1	0	1	1	1	1	1	0	1	1	1	1	1	0	0	1	
+	RoorkeeP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	SrinagarP	0	1	0	1	1	0	1	1	0	1	1	1	1	1	1	0	1	
+	KotdwarP	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	HaridwarP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	PithoragarhP	1	0	1	1	0	1	1	1	1	0	0	0	0	0	1	1	0	
+																			
+																			
+	[*,*,GreenChilli]:	KhatimaDC	RishikeshDC	ChampawatDC	HaldwaniDC	DehradunDC	SitarganjDC	KichhaDC	RudrapurDC	BareillyDC	SelakuiDC	RoorkeeDC	SrinagarDC	KotdwarDC 	HaridwarDC	PithoragarhDC	PilibhitDC	DelhiDC	:=
+	KhatimaP	1	1	1	1	0	1	1	1	1	0	0	0	1	1	1	1	0	
+	ThanoP	0	1	0	1	1	1	1	1	0	1	1	1	1	1	0	0	1	
+	BanbasaP	1	0	1	1	0	1	1	1	1	0	0	0	1	1	1	1	0	
+	HaldwaniP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	RanipokhariP	0	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	1	
+	SitarganjP	1	1	1	1	1	1	1	1	1	0	1	0	1	1	1	1	0	
+	KichhaP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	RudrapurP	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	
+	DoiwalaP	0	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	1	
+	SelakuiP	0	1	0	1	1	0	1	1	0	1	1	1	1	1	0	0	1	
+	RoorkeeP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	SrinagarP	0	1	0	0	1	0	0	0	0	1	1	1	1	1	1	0	0	
+	KotdwarP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	HaridwarP	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	
+	PithoragarhP	1	0	1	1	0	1	1	1	1	0	0	0	0	0	1	1	0
+	;
+
+param C_ip:	Tomato	Capsicum	BellPepper	Cucumber	GreenChilli	:=
+KhatimaP	1.96	1.176	3.92	3.92	1.96	
+ThanoP	2.613333333	1.568	5.226666667	5.226666667	2.613333333	
+BanbasaP	1.96	1.176	3.92	3.92	1.96	
+HaldwaniP	2.613333333	1.568	5.226666667	5.226666667	2.613333333	
+RanipokhariP	2.613333333	1.568	5.226666667	5.226666667	2.613333333	
+SitarganjP	1.96	1.176	3.92	3.92	1.96	
+KichhaP	1.96	1.176	3.92	3.92	1.96	
+RudrapurP	2.613333333	1.568	5.226666667	5.226666667	2.613333333	
+DoiwalaP	2.613333333	1.568	5.226666667	5.226666667	2.613333333	
+SelakuiP	2.613333333	1.568	5.226666667	5.226666667	2.613333333	
+RoorkeeP	1.96	1.176	3.92	3.92	1.96	
+SrinagarP	3.173333333	1.904	6.346666667	6.346666667	3.173333333	
+KotdwarP	1.96	1.176	3.92	3.92	1.96	
+HaridwarP	2.613333333	1.568	5.226666667	5.226666667	2.613333333	
+PithoragarhP	3.173333333	1.904	6.346666667	6.346666667	3.173333333
+;
+

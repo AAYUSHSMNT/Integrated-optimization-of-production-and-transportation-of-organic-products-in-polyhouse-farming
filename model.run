@@ -1,0 +1,7 @@
+model model.mod;
+data Pol125.dat;
+options solver gurobi;
+option gurobi_options 'outlev=1 timelimit=7200';
+solve;
+display Min_Area, z_ik, Total_Cost;
+display {(i,k) in IK, j in J, p in P : x_ikjp[i,k,j,p] != 0} x_ikjp[i,k,j,p];
