@@ -36,7 +36,7 @@ Download "DistanceBig.dat" file if running either of three case studies (Pol32.d
 
 Download "DistancePol.dat" file if running other case studies
 
-Put this file in desired location and input the file location in data.load command in section [3] of the "two-phase model.ipynb" code file and run all the section.
+Put this file in desired location and input the file location in data.load command in section [3] of the "Two-phase model.ipynb" code file and run all the section.
 
 Save the result in desired location using pandas dataframe command.
 
