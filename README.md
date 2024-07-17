@@ -11,5 +11,16 @@ Gurobi software
 AMPL software
 
 Description of running code:
-After installing necessary softwares and modues, open the "two-phase model.ipynb" in jupyter notebook.
-Download the 
+
+Download the "model.mod" file from repository and save it in a desired location
+
+Download all the desired data file (dat file) and save it in desired location. 
+
+Eg. Pol200v4.dat means dat file which consist data of 200nodes and 4 different transport modes are available at each polyhouse region.
+
+# Open the "two-phase model.ipynb" in jupyter notebook, and 
+
+add the AMPL software folder path first
+
+add the location for temporary directory
+
