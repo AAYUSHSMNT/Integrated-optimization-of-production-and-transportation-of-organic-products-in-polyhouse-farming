@@ -18,9 +18,25 @@ Download all the desired data file (dat file) and save it in desired location.
 
 Eg. Pol200v4.dat means dat file which consist data of 200nodes and 4 different transport modes are available at each polyhouse region.
 
-# Open the "two-phase model.ipynb" in jupyter notebook, and 
+# Open the "two-phase model.ipynb" in jupyter notebook , to solve first phase: 
 
 add the AMPL software folder path first
 
 add the location for temporary directory
+
+Input the location of "model.mod" file in "ampl.read" command
+
+Input the desired dat file eg. "Pol200v4" in  ampl.readData command and solve the first phase of the model.
+
+We Create a necessary dictionary in which for each polyhouse region i and transportation mode k, we save the DCs j where product going to be transported. 
+
+# To solve second phase:
+
+Download "DistanceBig.dat" file if running either of three case studies (Pol32.dat, Pol75.dat, Pol125.dat) 
+
+Download "DistancePol.dat" file if running other case studies
+
+Put this file in desired location and input the file location in data.load command in section [3] of the "two-phase model.ipynb" code file and run all the section.
+
+Save the result in desired location using pandas dataframe command.
 
